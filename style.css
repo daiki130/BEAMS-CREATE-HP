@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+header {
+  min-height: 100vh;
+}
+
 .slider {
   position: absolute;
   top: 0;
@@ -31,7 +35,7 @@ nav img {
   grid-column: 2/3;
   font-size: 24px;
   font-family: "Martel", serif;
-  margin-right: auto;
+  justify-self: start;
 }
 
 section {
