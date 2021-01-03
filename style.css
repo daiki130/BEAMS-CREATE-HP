@@ -121,23 +121,25 @@ main {
   height: 100%;
   width: 100%;
 }
-.section-product-title {
+.section-product-main {
   position: absolute;
   top: 42%;
+  width: 40%;
   margin-left: 6rem;
+}
+.section-product-title {
   font-size: 2rem;
   font-family: "Martel", serif;
-  width: 40%;
+  width: 100%;
   text-align: center;
   color: rgb(115, 120, 129);
 }
 .product-Paragraph {
   color: #ffffff;
-  position: absolute;
   top: 56%;
   font-size: 1.1rem;
-  margin-left: 6rem;
-  width: 40%;
+  margin-top: 6rem;
+  width: 100%;
 }
 .product-img {
   position: absolute;
