@@ -3,6 +3,7 @@ const slider = document.querySelector(".slider");
 const logo = document.querySelector("#logo");
 const hamburger = document.querySelector(".hamburger");
 const headline = document.querySelector(".headline");
+const header = document.querySelector("header");
 
 const tl = new TimelineMax();
 
