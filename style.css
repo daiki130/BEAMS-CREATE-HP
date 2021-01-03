@@ -132,11 +132,12 @@ main {
   font-family: "Martel", serif;
   width: 100%;
   text-align: center;
-  color: rgb(115, 120, 129);
+  color: rgb(16, 17, 19);
 }
 .product-Paragraph {
-  color: #ffffff;
-  top: 56%;
+  background: linear-gradient(to right, white, rgb(169, 176, 192));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.1rem;
   margin-top: 6rem;
   width: 100%;
