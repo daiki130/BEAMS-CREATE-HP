@@ -93,16 +93,16 @@ main {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
 }
 .section-Top-title {
   position: absolute;
-  top: 3rem;
+  top: 10rem;
   color: rgb(96, 188, 224);
-  font-size: 2.5rem;
+  font-size: 3rem;
   z-index: 1;
   font-family: "Martel", serif;
   left: 50%;
@@ -117,9 +117,9 @@ main {
 }
 .product-img {
   position: absolute;
-  top: 12rem;
+  top: 25rem;
   width: 20%;
-  right: 0;
+  right: 4rem;
 }
 .product-Paragraph {
   color: #fff;
@@ -127,4 +127,6 @@ main {
   position: absolute;
   top: 36%;
   right: 50%;
+  font-size: 1.3rem;
+  margin-left: 3rem;
 }
