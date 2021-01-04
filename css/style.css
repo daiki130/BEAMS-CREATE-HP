@@ -218,13 +218,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 0;
 }
 .product-img {
   position: absolute;
   top: 0;
   object-fit: scale-down;
   height: 100%;
+}
+.product-img:nth-child(1) {
+  opacity: 0;
 }
 .product-img:nth-child(2) {
   opacity: 0;

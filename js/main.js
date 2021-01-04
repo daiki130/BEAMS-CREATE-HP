@@ -12,8 +12,17 @@ const cb = function(entries, observer) {
       SectionTopLists.forEach((SectionTopList, i) => {
         SectionTopList.classList.add(`boundAnimation${i}`);
       });
-      tl.fromTo(SectionProductMain, 1, {x: "-120%", opacity: "0"}, {x: "0%", opacity: "1", ease: Power2.easeInOut}, "+=2")
-      tl.fromTo(SectionProductImgs, 1, {x: "100%", opacity: "0"}, {x: "0%", opacity: "1", ease: Power2.easeInOut})
+      tl.fromTo(SectionProductMain, 1, {x: "-120%", opacity: 0}, {x: "0%", opacity: 1, ease: Power2.easeInOut}, "+=2")
+        .fromTo(ProductImgs[0], 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+        .fromTo(SectionProductImgs, 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, ease: Power2.easeInOut}, "-=1")
+        .fromTo(ProductImgs[1], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+        .to(ProductImgs[0], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
+        .fromTo(ProductImgs[2], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+        .to(ProductImgs[1], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
+        .fromTo(ProductImgs[3], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+        .to(ProductImgs[2], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
+        .fromTo(ProductImgs[4], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+        .to(ProductImgs[3], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
       observer.unobserve(entry.target); //監視の停止 entry.target = SectionTopTitleのこと
     }
   });
