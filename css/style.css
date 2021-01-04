@@ -121,6 +121,8 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .section-product-main {
   position: absolute;
@@ -145,23 +147,6 @@ main {
   width: 100%;
   font-weight: 600;
 }
-.product-img {
-  position: absolute;
-  top: 22rem;
-  height: 48%;
-  right: 7rem;
-}
-
-/*アニメーション指定
-文字数に合わせて開始時間を設定する*/
-/* .section-Top-title-list:nth-child(1){animation: bound-anim 1.2s ease 8.0s;}
-.section-Top-title-list:nth-child(2){animation: bound-anim 1.2s ease 8.1s;}
-.section-Top-title-list:nth-child(3){animation: bound-anim 1.2s ease 8.2s;}
-.section-Top-title-list:nth-child(4){animation: bound-anim 1.2s ease 8.3s;}
-.section-Top-title-list:nth-child(5){animation: bound-anim 1.2s ease 8.4s;}
-.section-Top-title-list:nth-child(6){animation: bound-anim 1.2s ease 8.5s;}
-.section-Top-title-list:nth-child(7){animation: bound-anim 1.2s ease 8.6s;} */
-
 
 /*アニメーションキーフレーム*/
 @keyframes bound-anim {
@@ -171,7 +156,6 @@ main {
   90% {transform: translate(0px, 0em);transform: scale(1.2,0.8);}
   100% {top: 0;transform: scale(1);opacity: 1;}
 }
-
 .boundAnimation0 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
@@ -221,3 +205,37 @@ main {
   animation-fill-mode: forwards;
   animation-delay: 1.6s; 
 }
+
+/* Jacket */
+.section-product-imgs {
+  position: relative;
+  top: 22rem;
+  height: 50%;
+  width: 50%;
+  margin-left: auto;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.product-img {
+  position: absolute;
+  top: 0;
+  object-fit: scale-down;
+  height: 100%;
+}
+.product-img:nth-child(2) {
+  opacity: 0;
+}
+.product-img:nth-child(3) {
+  opacity: 0;
+}
+.product-img:nth-child(4) {
+  opacity: 0;
+}
+.product-img:nth-child(5) {
+  opacity: 0;
+}
+
