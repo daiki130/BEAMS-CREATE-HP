@@ -130,6 +130,8 @@ main {
   width: 40%;
   margin-left: 6rem;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
 }
 .section-product-title {
   font-size: 2rem;
@@ -143,9 +145,10 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.1rem;
-  margin-top: 6rem;
   width: 100%;
   font-weight: 600;
+  max-width: 25rem;
+  margin: 4rem auto;
 }
 
 /*アニメーションキーフレーム*/
