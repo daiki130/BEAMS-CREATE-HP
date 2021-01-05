@@ -50,9 +50,10 @@ section {
   height: 60%;
   width: 100%;
   position: relative;
+  transform-style: preserve-3d;
 }
 
-.hero img {
+.heroImg {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -67,6 +68,7 @@ section {
   color: white;
   z-index: 3;
   font-family: "Martel", serif;
+  transition: transform 0.5s ease-out;
 }
 .hero::after {
   content: "";
