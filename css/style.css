@@ -126,7 +126,7 @@ main {
 }
 .section-product-main {
   position: absolute;
-  top: 42%;
+  top: 40%;
   width: 40%;
   margin-left: 6rem;
   opacity: 0;
@@ -148,7 +148,7 @@ main {
   width: 100%;
   font-weight: 600;
   max-width: 25rem;
-  margin: 4rem auto;
+  margin: 3rem auto;
 }
 
 /*アニメーションキーフレーム*/
@@ -212,7 +212,7 @@ main {
 /* Jacket */
 .section-product-imgs {
   position: relative;
-  top: 22rem;
+  top: 20rem;
   height: 50%;
   width: 50%;
   margin-left: auto;
