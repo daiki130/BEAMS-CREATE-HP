@@ -101,14 +101,13 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  /* 動画用 */
   z-index: -1;
 }
 .section-Top-title {
   position: absolute;
   top: 10rem;
   /* color: rgb(96, 188, 224); */
-  color: rgb(238, 228, 92);
+  color: rgb(247, 231, 7);
   font-size: 3.3rem;
   z-index: 1;
   font-family: "Martel", serif;
