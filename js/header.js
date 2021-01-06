@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const hamburger = document.querySelector(".hamburger");
   const headline = document.querySelector(".headline");
   const body = document.querySelector("body");
+  const SectionContainerVideo = document.querySelector(".section-container-video");
 
   const tl = new TimelineMax();
 
@@ -29,6 +30,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
       scrollBy(ptionsObject)
     },
   })
+
+  // section-containerの背景動画スピード設定
+  function moveSpeed() {
+    SectionContainerVideo.playbackRate = 0.5;
+  }
+  moveSpeed();
 });
 
 const hero = document.querySelector(".hero");
