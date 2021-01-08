@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const headline = document.querySelector(".headline");
   const body = document.querySelector("body");
   const SectionContainerVideo = document.querySelector(".section-container-video");
+  const gridColumns = document.querySelectorAll(".grid-column");
+  
 
   const tl = new TimelineMax();
 
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     .fromTo(slider,1.3, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.2")
     .fromTo(logo, 0.6, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
     .fromTo(headline, 0.1, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
-    .fromTo(hamburger, 0.5, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
+    .fromTo(gridColumns, 0.5, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
 
   let ptionsObject = {
     top: window.innerHeight,  //垂直方向
