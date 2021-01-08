@@ -7,6 +7,7 @@
 
 header {
   min-height: 100vh;
+  position: relative;
 }
 
 .slider {
@@ -26,6 +27,9 @@ nav {
   min-height: 10vh;
   color: white;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 nav img {
   width: 6.5rem;
@@ -62,6 +66,8 @@ section {
   height: 80vh;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 6rem;
 }
 
 .hero {
@@ -69,7 +75,7 @@ section {
   width: 100%;
   position: relative;
   transform-style: preserve-3d;
-  box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
 .heroImg {
@@ -106,10 +112,13 @@ main {
 }
 
 #section-container {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .section-container-video {
   height: 100%;
@@ -176,60 +185,75 @@ main {
 
 /*アニメーションキーフレーム*/
 @keyframes bound-anim {
-	0% {top: 0;transform: scale(1);opacity: 1;}
-	30% {transform: translate(0px, -1em);}
-	50% {transform: scale(1);}
-  90% {transform: translate(0px, 0em);transform: scale(1.2,0.8);}
-  100% {top: 0;transform: scale(1);opacity: 1;}
+  0% {
+    top: 0;
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: translate(0px, -1em);
+  }
+  50% {
+    transform: scale(1);
+  }
+  90% {
+    transform: translate(0px, 0em);
+    transform: scale(1.2, 0.8);
+  }
+  100% {
+    top: 0;
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .boundAnimation0 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-delay: 1.0s;
+  animation-delay: 1s;
 }
 .boundAnimation1 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-delay: 1.1s; 
+  animation-delay: 1.1s;
 }
 .boundAnimation2 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-delay: 1.2s; 
+  animation-delay: 1.2s;
 }
 .boundAnimation3 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-delay: 1.3s; 
+  animation-delay: 1.3s;
 }
 .boundAnimation4 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-delay: 1.4s; 
+  animation-delay: 1.4s;
 }
 .boundAnimation5 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-delay: 1.5s; 
+  animation-delay: 1.5s;
 }
 .boundAnimation6 {
   animation-name: bound-anim;
   animation-duration: 1.2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-delay: 1.6s; 
+  animation-delay: 1.6s;
 }
 
 /* Jacket */
