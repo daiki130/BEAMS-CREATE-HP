@@ -11,8 +11,10 @@ function cursor(e) {
 gridColumns.forEach(gridColumn => {
   gridColumn.addEventListener("mouseleave", () => {
     mouseCursor.classList.remove("link-grow");
+    gridColumn.classList.remove("hovered-Link");
   });
   gridColumn.addEventListener("mouseover", () => {
     mouseCursor.classList.add("link-grow");
+    gridColumn.classList.add("hovered-Link");
   });
 });
