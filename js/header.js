@@ -40,22 +40,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
   moveSpeed();
 });
 
-const hero = document.querySelector(".hero");
-const headline = document.querySelector(".headline");
-//Popout
-hero.addEventListener("mouseenter", (e) => {
-  headline.style.transform = "translate3D(0%, -70%, 200px)";
-});
-//Popback
-hero.addEventListener("mouseleave", (e) => {
-  headline.style.transform = "translate(-20%, -70%)";
-});
+// const hero = document.querySelector(".hero");
+// const headline = document.querySelector(".headline");
+// //Popout
+// hero.addEventListener("mouseenter", (e) => {
+//   headline.style.transform = "translate3D(0%, -70%, 200px)";
+// });
+// //Popback
+// hero.addEventListener("mouseleave", (e) => {
+//   headline.style.transform = "translate(-20%, -70%)";
+// });
 
-//Animate In smartphone
-hero.addEventListener("ontouchmove", (e) => {
-  headline.style.transform = "translate3D(0%, -70%, 200px)";
-});
-//Animate Out smartphone
-hero.addEventListener("ontouchend", (e) => {
-  headline.style.transform = "translate(-20%, -70%)";
-});
+// //Animate In smartphone
+// hero.addEventListener("ontouchmove", (e) => {
+//   headline.style.transform = "translate3D(0%, -70%, 200px)";
+// });
+// //Animate Out smartphone
+// hero.addEventListener("ontouchend", (e) => {
+//   headline.style.transform = "translate(-20%, -70%)";
+// });

@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+body {
+  cursor: none;
+}
+
 .cursor {
   width: 3rem;
   height: 3rem;
@@ -16,6 +20,7 @@
   transition-property: background, transform; /* トランジション効果を適用する CSS プロパティを指定 */
   transform-origin: 100% 100%; /* transformの原点を設定 */
   z-index: 1;
+  backdrop-filter: grayscale(); /* モノトーン */
 }
 .link-grow {
   transform: scale(2);
@@ -148,6 +153,7 @@ main {
   top: 0;
   left: 0;
   z-index: -1;
+  backdrop-filter: invert(100%);  /* 階調反転させる */
 }
 .section-Top-title {
   position: absolute;
