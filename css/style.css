@@ -5,6 +5,20 @@
   list-style: none;
 }
 
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+.link-grow {
+  transform: scale(2);
+  background: black;
+}
+
 header {
   min-height: 100vh;
   position: relative;
