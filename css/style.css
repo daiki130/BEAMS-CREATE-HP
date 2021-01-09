@@ -13,6 +13,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
+  transition-property: background, transform; /* トランジション効果を適用する CSS プロパティを指定 */
 }
 .link-grow {
   transform: scale(2);
@@ -45,22 +46,25 @@ nav {
   width: 100%;
   z-index: 10;
 }
-nav img {
+/* nav img {
   width: 6.5rem;
   padding-top: 1em;
-}
+} */
 
 #logo {
   grid-column: 2/3;
   font-size: 24px;
   font-family: "Martel", serif;
   justify-self: start;
+  width: 6.5rem;
+  padding-top: 1em;
 }
 .grid-column {
   font-family: "Martel", serif;
   font-size: 1rem;
   justify-self: center;
-  padding-top: 1em;
+  padding: 1em;
+  margin-top: 1em;
 }
 .grid-column:nth-of-type(1) {
   grid-column: 3/4;
