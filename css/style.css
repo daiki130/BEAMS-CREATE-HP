@@ -131,9 +131,12 @@ nav {
   opacity: 0.3;
 }
 
-main {
-  min-height: 100vh;
+.main-container {
   position: relative;
+}
+
+.section-containerFramework {
+  min-height: 100vh;
 }
 
 #section-container {
@@ -334,21 +337,40 @@ body::-webkit-scrollbar-track {
 }
 
 .shoes-container {
-  position: absolute;
-  top: 100%;
   width: 100%;
-  height: 100%;
-  left: 0;
+  min-height: 100vh;
   background: darkcyan;
+  position: relative;
+}
+.shoes-box {
+  position: relative;
+  top: 12vh;
+  bottom: 2rem;
+  height: 87vh;
+  width: 100%;
+}
+.shoes-h1container {
+  /* background: red; */
+  min-height: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .shoes-h1 {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -15%);
+  margin: auto;
   font-size: 3rem;
   font-family: "Martel", serif;
   /* color: goldenrod; */
   /* color: darksalmon; */
   font-weight: bold;
+  z-index: 1;
+}
+.card-list {
+  position: absolute;
+  top: 10%;
+  /* background: red; */
+  left: 3%;
+  right: 3%;
+  bottom: 3%;
+  min-height: 70%;
 }
