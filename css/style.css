@@ -31,7 +31,7 @@ body {
   color: antiquewhite;
 }
 
-header {
+.header {
   min-height: 100vh;
   position: relative;
 }
@@ -345,14 +345,13 @@ body::-webkit-scrollbar-track {
 .shoes-box {
   position: relative;
   top: 12vh;
-  bottom: 2rem;
-  height: 87vh;
+  height: 88vh;
   width: 100%;
 }
 .shoes-h1container {
-  /* background: red; */
-  min-height: 10%;
   position: relative;
+  top: 0;
+  min-height: 10%;
   display: flex;
   flex-direction: column;
 }
@@ -368,9 +367,56 @@ body::-webkit-scrollbar-track {
 .card-list {
   position: absolute;
   top: 10%;
-  /* background: red; */
-  left: 3%;
-  right: 3%;
-  bottom: 3%;
-  min-height: 70%;
+  bottom: 0;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  height: 48%;
+  width: 32%;
+  padding: 1.5rem 1rem;
+  background: #ffffff;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 295px;
+  min-height: 270px;
+}
+.card-header-Title {
+  font-size: 1.3rem;
+}
+.card-detail {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 1.5rem 0 0;
+}
+.sneaker {
+  position: relative;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( to right,rgb(161, 138, 114), rgb(242, 139, 107) );
+  /* background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) ); */
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.shoes-img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
