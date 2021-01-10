@@ -33,5 +33,5 @@ const options = {
   threshold: 1, //SectionTopTitleの下辺が500px内に入りきった時
 };
 const io = new IntersectionObserver(cb, options);
-io.observe(SectionTopTitle);
+io.observe(SectionTopTitle); //監視対象
 
