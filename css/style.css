@@ -367,26 +367,54 @@ body::-webkit-scrollbar-track {
 .card-list {
   position: absolute;
   top: 10%;
+  left: 0;
+  right: 0;
   bottom: 0;
-  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-list-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* width: 870px;
+  height: 600px; */
+  width: 80%;
+  height: 90%;
+  margin: auto;
 }
 .card {
-  height: 48%;
+  height: 45%;
   width: 32%;
   padding: 1.5rem 1rem;
   background: #ffffff;
   box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
   border-radius: 16px;
-  margin-top: auto;
-  margin-bottom: auto;
+  /* margin-top: auto;
+  margin-bottom: auto; */
   max-width: 295px;
   min-height: 270px;
+  margin: auto;
 }
+
+.card:nth-of-type(1) {
+  background: linear-gradient(45deg,rgb(161, 138, 114), rgb(242, 139, 107) );
+}
+.card:nth-of-type(2) {
+  background: linear-gradient(45deg, #0789f1, #0c4573);
+  background: linear-gradient(45deg, #0789f1, #ffffff, #e68e0c);
+}
+.card:nth-of-type(3) {
+  background: linear-gradient(45deg, rgb(57 54 66), rgb(239 221 220));
+}
+.card:nth-of-type(4) {
+  background: linear-gradient(45deg, rgb(57 54 66), rgb(243 161 13));
+}
+
 .card-header-Title {
   font-size: 1.3rem;
+  width: 90%;
+  margin: 0 auto;
 }
 .card-detail {
   position: relative;
@@ -403,14 +431,30 @@ body::-webkit-scrollbar-track {
   justify-content: center;
 }
 .circle {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient( to right,rgb(161, 138, 114), rgb(242, 139, 107) );
-  /* background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) ); */
+  width: 70%;
+  height: 85%;
   position: absolute;
   border-radius: 50%;
   z-index: 1;
 }
+/* .circle1 {
+  background: linear-gradient( to right,rgb(161, 138, 114), rgb(242, 139, 107) );
+}
+.circle2 {
+  background: linear-gradient( to right,rgb(68, 63, 57), rgb(221, 141, 66) );
+}
+.circle3 {
+  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
+}
+.circle4 {
+  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
+}
+.circle5 {
+  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
+}
+.circle6 {
+  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
+} */
 .shoes-img {
   position: absolute;
   z-index: 2;
