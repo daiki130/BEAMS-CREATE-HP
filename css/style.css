@@ -401,7 +401,6 @@ body::-webkit-scrollbar-track {
   background: linear-gradient(45deg,rgb(161, 138, 114), rgb(242, 139, 107) );
 }
 .card:nth-of-type(2) {
-  background: linear-gradient(45deg, #0789f1, #0c4573);
   background: linear-gradient(45deg, #0789f1, #ffffff, #e68e0c);
 }
 .card:nth-of-type(3) {
@@ -409,6 +408,12 @@ body::-webkit-scrollbar-track {
 }
 .card:nth-of-type(4) {
   background: linear-gradient(45deg, rgb(57 54 66), rgb(243 161 13));
+}
+.card:nth-of-type(5) {
+  background: linear-gradient(45deg, rgb(29 37 49), rgb(81 92 162));
+}
+.card:nth-of-type(6) {
+  background: linear-gradient(45deg, rgb(8 9 10), rgb(230 209 21));
 }
 
 .card-header-Title {
