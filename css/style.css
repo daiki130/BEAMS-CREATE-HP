@@ -421,9 +421,10 @@ body::-webkit-scrollbar-track {
   font-size: 1.3rem;
   width: 90%;
   margin: 0 auto;
+  min-height: 60px;
 }
 .longTitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .card-detail {
   position: relative;
@@ -438,6 +439,8 @@ body::-webkit-scrollbar-track {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  margin-right: auto;
 }
 .circle {
   width: 70%;
@@ -473,4 +476,24 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: 100%;
   transition: all 0.75s ease-out;
+}
+.sizes {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.sizes button{
+  /* padding: 0.5rem 2rem; */
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+  outline: none;
+  height: 20%;
+  width: 80%;
+  margin: auto;
 }
