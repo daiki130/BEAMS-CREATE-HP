@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const hero = document.querySelector(".hero");
   const slider = document.querySelector(".slider");
   const logo = document.querySelector("#logo");
-  const hamburger = document.querySelector(".hamburger");
+  // const hamburger = document.querySelector(".hamburger");
   const headline = document.querySelector(".headline");
   const body = document.querySelector("body");
   const SectionContainerVideo = document.querySelector(".section-container-video");
@@ -38,24 +38,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     SectionContainerVideo.playbackRate = 0.5;
   }
   moveSpeed();
-});
-
-const hero = document.querySelector(".hero");
-const headline = document.querySelector(".headline");
-//Popout
-hero.addEventListener("mouseenter", (e) => {
-  headline.style.transform = "translate3D(0%, -70%, 200px)";
-});
-//Popback
-hero.addEventListener("mouseleave", (e) => {
-  headline.style.transform = "translate(-20%, -70%)";
-});
-
-//Animate In smartphone
-hero.addEventListener("ontouchmove", (e) => {
-  headline.style.transform = "translate3D(0%, -70%, 200px)";
-});
-//Animate Out smartphone
-hero.addEventListener("ontouchend", (e) => {
-  headline.style.transform = "translate(-20%, -70%)";
 });

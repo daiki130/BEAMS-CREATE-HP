@@ -336,10 +336,23 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
+.sizes::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.sizes::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(90deg, #dfdfee, #a39bb1, #7b7b8c);
+}
+.sizes::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #8b8bb5, #ffffff,transparent);
+  border-radius: 10px;
+}
 
 .shoes-container {
   width: 100%;
-  /* min-height: 100vh; */
   min-height: 120vh;
   background: darkcyan;
   position: relative;
@@ -347,7 +360,6 @@ body::-webkit-scrollbar-track {
 .shoes-box {
   position: relative;
   top: 12vh;
-  /* height: 88vh; */
   height: 108vh;
   width: 100%;
 }
@@ -437,7 +449,8 @@ body::-webkit-scrollbar-track {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  margin: 1.5rem 0 0;
+  margin: 1rem 0 0;
+  max-height: 146px;
 }
 .sneaker {
   position: relative;
@@ -455,24 +468,6 @@ body::-webkit-scrollbar-track {
   border-radius: 50%;
   z-index: 1;
 }
-/* .circle1 {
-  background: linear-gradient( to right,rgb(161, 138, 114), rgb(242, 139, 107) );
-}
-.circle2 {
-  background: linear-gradient( to right,rgb(68, 63, 57), rgb(221, 141, 66) );
-}
-.circle3 {
-  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
-}
-.circle4 {
-  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
-}
-.circle5 {
-  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
-}
-.circle6 {
-  background: linear-gradient( to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75) );
-} */
 .shoes-img {
   position: absolute;
   z-index: 2;
@@ -489,6 +484,8 @@ body::-webkit-scrollbar-track {
   height: 100%;
   justify-content: space-between;
   transition: all 0.75s ease-out;
+  overflow-y: scroll;
+  margin: auto 0;
 }
 .sizesButton {
   background: none;
@@ -501,7 +498,9 @@ body::-webkit-scrollbar-track {
   outline: none;
   height: 20%;
   width: 80%;
-  margin: auto;
+  /* margin: auto; */
+  margin: 4px auto;
+  min-height: 26px;
 }
 .purchase {
   display: flex;
@@ -523,4 +522,7 @@ body::-webkit-scrollbar-track {
 .sizesButton.active {
   background-color: #585858;
   color: white;
+}
+.darksalmon {
+  color: darksalmon;
 }
