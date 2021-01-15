@@ -25,7 +25,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
 
   // スクロールイベント
-  const tm = TweenMax.to(body, 6, {
+  // const tm = TweenMax.to(body, 6, {
+  //   delay: -2,
+  //   ease: Power1.easeOut,
+  //   onComplete: function() {
+  //     scrollBy(ptionsObject)
+  //   },
+  // })
+  TweenMax.to(body, 6, {
     delay: -2,
     ease: Power1.easeOut,
     onComplete: function() {
