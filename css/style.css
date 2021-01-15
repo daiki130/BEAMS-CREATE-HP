@@ -73,6 +73,7 @@ nav {
   padding: 1em;
   margin-top: 1em;
   font-weight: bold;
+  white-space: nowrap; /* 改行を強制的に禁止する */
 }
 .grid-column:nth-of-type(1) {
   grid-column: 3/4;
@@ -525,4 +526,9 @@ body::-webkit-scrollbar-track {
 }
 .darksalmon {
   color: darksalmon;
+}
+@media screen and (min-width: 1580px) {
+  .card {
+    margin: auto 45px;
+  }
 }
