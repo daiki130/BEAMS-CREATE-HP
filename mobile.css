@@ -1,12 +1,18 @@
 @media screen and (max-width: 500px) {
-  nav #logo {
+  .header {
+    min-height: 93vh;
+  }
+  .header nav #logo {
     width: 4.5rem;
   }
-  nav .grid-column {
+  .header nav .grid-column {
     display: none;
   }
-  .headline {
+  .header .headline {
     font-size: 50px;
+  }
+  .slider {
+    min-height: 93vh;
   }
   .section-Top-title {
     font-size: 2rem;

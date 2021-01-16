@@ -28,7 +28,6 @@ body {
   background: black;
 }
 .hovered-Link {
-  /* color: burlywood; */
   color: antiquewhite;
 }
 
@@ -414,6 +413,13 @@ body::-webkit-scrollbar-track {
   perspective: 1000px;
   display: flex;
   flex-direction: column;
+  transform: translate(-120%, 0%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.card.inview {
+  transform: translate(0%, 0%);
+  opacity: 1;
 }
 
 .card:nth-of-type(1) {
