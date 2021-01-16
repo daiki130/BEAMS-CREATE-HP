@@ -41,12 +41,15 @@
   .section-product-container .section-product-imgs .product-img:nth-child(1) {
     opacity: 1;
   }
-  .card-list-container {
+  .shoes-container {
+    min-height: 300vh;
+  }
+  .shoes-container .card-list-container {
     min-width: 0%;
   }
-  .card-list-container .card {
+  .shoes-container .card-list-container .card {
     width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
