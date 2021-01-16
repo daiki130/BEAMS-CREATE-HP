@@ -370,24 +370,12 @@ body::-webkit-scrollbar-track {
 .shoes-Hcontainer {
   position: relative;
   top: 0;
-  min-height: 7%;
+  min-height: 10%;
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 400px;
   margin: 0 auto;
 }
-/* .shoes-h1 {
-  margin: auto;
-  font-size: 3rem;
-  font-family: "Martel", serif;
-  width: 100%;
-  font-weight: bold;
-  z-index: 1;
-  animation: typing 10s steps(8) infinite;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-} */
 .shoes-h1TopContainer {
   position: absolute;
   top: 0;
@@ -409,7 +397,7 @@ body::-webkit-scrollbar-track {
   width: 100%;
   font-weight: bold;
   z-index: 1;
-  animation: typing 10s steps(8) infinite;
+  /* animation: typing 10s steps(8) infinite; */
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -418,28 +406,28 @@ body::-webkit-scrollbar-track {
   align-items: center;
   display: flex;
 }
-.shoes-h1Top::before {
+/* .shoes-h1Top::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 2px;
   height: 100%;
-  background: black;
+  background: black; */
   /* animation: blinkCursor 0.8s steps(3) forwards 4; */
-  animation: blinkCursor 0.8s steps(3) forwards infinite;
-}
-.shoes-h1Second::before {
+  /* animation: blinkCursor 0.8s steps(3) forwards infinite;
+} */
+/* .shoes-h1Second::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 2px;
   height: 100%;
-  background: black;
+  background: black; */
   /* animation: blinkCursor 0.8s steps(3) forwards 4; */
-  animation: blinkCursor 0.8s steps(3) forwards infinite;
-}
+  /* animation: blinkCursor 0.8s steps(3) forwards infinite;
+} */
 @keyframes blinkCursor {
   0%,25% {
     opacity: 1;

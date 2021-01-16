@@ -54,11 +54,47 @@
   .shoes-container {
     min-height: 300vh;
   }
-  .shoes-container .shoes-h1Top {
+  .shoes-container .shoes-box .shoes-Hcontainer {
+    min-height: 7%;
+    width: 270px;
+  }
+  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1 {
+    -webkit-animation: typing 10s steps(8) infinite;
+            animation: typing 10s steps(8) infinite;
+  }
+  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: black;
+    /* animation: blinkCursor 0.8s steps(3) forwards 4; */
+    -webkit-animation: blinkCursor 0.8s steps(3) forwards infinite;
+            animation: blinkCursor 0.8s steps(3) forwards infinite;
+  }
+  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1Top {
     font-size: 1.8rem;
     letter-spacing: 1.045rem;
   }
-  .shoes-container .shoes-h1Second {
+  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h2TopContainer .shoes-h1 {
+    -webkit-animation: typing 10s steps(8) infinite;
+            animation: typing 10s steps(8) infinite;
+  }
+  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h2TopContainer .shoes-h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: black;
+    /* animation: blinkCursor 0.8s steps(3) forwards 4; */
+    -webkit-animation: blinkCursor 0.8s steps(3) forwards infinite;
+            animation: blinkCursor 0.8s steps(3) forwards infinite;
+  }
+  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h2TopContainer .shoes-h1Second {
     font-size: 2rem;
     letter-spacing: 0.8rem;
   }
