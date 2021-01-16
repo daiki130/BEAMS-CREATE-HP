@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   nav #logo {
     width: 4.5rem;
   }
@@ -49,4 +49,4 @@
     margin: 20px 0;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=mobile.css.map */
