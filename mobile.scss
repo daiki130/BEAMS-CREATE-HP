@@ -52,6 +52,14 @@
   }
   .shoes-container {
     min-height: 300vh;
+    & .shoes-h1Top {
+      font-size: 1.8rem;
+      letter-spacing: 1rem;
+    }
+    & .shoes-h1Second {
+      font-size: 2rem;
+      letter-spacing: 0.8rem;
+    }
     & .card-list-container {
       min-width: 0%;
       & .card {

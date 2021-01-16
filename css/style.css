@@ -165,7 +165,6 @@ nav {
 .section-Top-title {
   position: absolute;
   top: 10rem;
-  /* color: rgb(96, 188, 224); */
   color: rgb(247, 231, 7);
   font-size: 3.3rem;
   z-index: 1;
@@ -174,6 +173,7 @@ nav {
   transform: translate(-50%, 0);
   display: flex;
   font-weight: bold;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #0004);
 }
 .section-Top-title-list {
   margin-right: 1rem;
@@ -364,23 +364,103 @@ body::-webkit-scrollbar-track {
   top: 12vh;
   height: 108vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.shoes-h1container {
+.shoes-Hcontainer {
   position: relative;
   top: 0;
   min-height: 10%;
   display: flex;
   flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
+}
+/* .shoes-h1 {
+  margin: auto;
+  font-size: 3rem;
+  font-family: "Martel", serif;
+  width: 100%;
+  font-weight: bold;
+  z-index: 1;
+  animation: typing 10s steps(8) infinite;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+} */
+.shoes-h1TopContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50%;
+}
+.shoes-h2TopContainer {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 50%;
 }
 .shoes-h1 {
   margin: auto;
   font-size: 3rem;
   font-family: "Martel", serif;
-  /* color: goldenrod; */
-  /* color: darksalmon; */
+  width: 100%;
   font-weight: bold;
   z-index: 1;
+  animation: typing 10s steps(8) infinite;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
+.shoes-h1Top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 50px;
+  background: black;
+  /* animation: blinkCursor 0.8s steps(3) forwards 4; */
+  animation: blinkCursor 0.8s steps(3) forwards infinite;
+}
+.shoes-h1Second::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 50px;
+  background: black;
+  /* animation: blinkCursor 0.8s steps(3) forwards 4; */
+  animation: blinkCursor 0.8s steps(3) forwards infinite;
+}
+@keyframes blinkCursor {
+  0%,25% {
+    opacity: 1;
+  }
+  26%,50% {
+    opacity: 0;
+  }
+  51%,75% {
+    opacity: 1;
+  }
+  76%,100% {
+    opacity: 0;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 270px;
+  }
+}
+
 .card-list {
   position: absolute;
   top: 10%;
@@ -513,13 +593,6 @@ body::-webkit-scrollbar-track {
   justify-content: center;
   width: 90%;
   margin-right: auto;
-}
-.circle {
-  width: 70%;
-  height: 85%;
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
 }
 .shoes-img {
   position: absolute;
