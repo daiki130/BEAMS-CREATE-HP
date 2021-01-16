@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
   .header {
-    min-height: 93vh;
+    min-height: 85vh;
     nav {
       & #logo {
         width: 4.5rem;
@@ -12,9 +12,13 @@
     .headline {
       font-size: 50px;
     }
+    .hero-section {
+      top: 5%;
+      bottom: 5%;
+    }
   }
   .slider {
-    height: 93vh;
+    height: 85vh;
   }
   .section-Top-title {
     font-size: 2rem;
