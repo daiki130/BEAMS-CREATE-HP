@@ -71,35 +71,42 @@ sizesButtons.forEach(sizesButton => {
   });
 });
 
-const logo = document.querySelector("#logo");
-const shoesContainer = document.querySelector(".shoes-container");
-const gridColumns = document.querySelectorAll(".grid-column");
-
-const cb = function(entries, observer) {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) { //SectionTopTitleが画面上に入ってきた時イベント
-      gridColumns.forEach((gridColumn, i) => {
-        gridColumn.classList.toggle(".darksalmon");
-      });
-      // tl.fromTo(SectionProductMain, 1, {x: "-120%", opacity: 0}, {x: "0%", opacity: 1, ease: Power2.easeInOut}, "+=2")
-      //   .fromTo(ProductImgs[0], 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-      //   .fromTo(SectionProductImgs, 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, ease: Power2.easeInOut}, "-=1")
-      //   .fromTo(ProductImgs[1], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-      //   .to(ProductImgs[0], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
-      //   .fromTo(ProductImgs[2], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-      //   .to(ProductImgs[1], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
-      //   .fromTo(ProductImgs[3], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-      //   .to(ProductImgs[2], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
-      //   .fromTo(ProductImgs[4], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
-      //   .to(ProductImgs[3], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
-      observer.unobserve(entry.target); //監視の停止 entry.target = SectionTopTitleのこと
-    }
-  });
+const cb = function (el, isIntersecting) {
+  if(isIntersecting) {
+    animate(el);
+  }
 }
-const options = {
-  root: shoesContainer, //交差判定のベース）となる要素を指定
-  // rootMargin: "0px 0px 0px 0px", //画面の内側、下から300px監視対象の範囲
-  threshold: 1, //SectionTopTitleの下辺が500px内に入りきった時
-};
-const io = new IntersectionObserver(cb, options);
-io.observe(logo); //監視対象のDOMを登録
+
+function animate(el) {
+  el.classList.toggle("inview");
+}
+
+class ScrollObserver {
+  constructor(els, cb, options) {
+    this.els = document.querySelectorAll(els);
+    this.cb = cb;
+    const defaltOptions = {
+      root: null, //交差判定のベースとなる要素を指定
+      rootMargin: "0px", //画面の内側、下から300px監視対象の範囲
+      threshold: 0, //SectionTopTitleの下辺が500px内に入りきった時
+    };
+    this.options = Object.assign(defaltOptions, options)//defaltOptionsとoptionsの設定をマージ　optionsで渡された設定が優先される
+    this._init();
+  }
+  _init() {
+    const callback = function(entries, observer) {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) { //監視対象のDOMが画面上に入ってきた時イベント
+          this.cb(entry.target, true);
+          observer.unobserve(entry.target); //監視の停止 entry.target = SectionTopTitleのこと
+        } else {
+          this.cb(entry.target, false);
+        }
+      });
+    }
+    const io = new IntersectionObserver(callback.bind(this), this.options);
+    this.els.forEach(el => io.observe(el)); //監視対象のDOMを登録
+  }
+}
+
+new ScrollObserver(".card", cb);
