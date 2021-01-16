@@ -52,13 +52,51 @@
   }
   .shoes-container {
     min-height: 300vh;
-    & .shoes-h1Top {
-      font-size: 1.8rem;
-      letter-spacing: 1.045rem;
-    }
-    & .shoes-h1Second {
-      font-size: 2rem;
-      letter-spacing: 0.8rem;
+    & .shoes-box {
+      & .shoes-Hcontainer {
+        min-height: 7%;
+        width: 270px;
+        & .shoes-h1TopContainer {
+          & .shoes-h1 {
+            animation: typing 10s steps(8) infinite;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 2px;
+              height: 100%;
+              background: black;
+              /* animation: blinkCursor 0.8s steps(3) forwards 4; */
+              animation: blinkCursor 0.8s steps(3) forwards infinite;
+            }
+          } 
+          & .shoes-h1Top {
+            font-size: 1.8rem;
+            letter-spacing: 1.045rem;
+          }
+        }
+        & .shoes-h2TopContainer {
+          & .shoes-h1 {
+            animation: typing 10s steps(8) infinite;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 2px;
+              height: 100%;
+              background: black;
+              /* animation: blinkCursor 0.8s steps(3) forwards 4; */
+              animation: blinkCursor 0.8s steps(3) forwards infinite;
+            }
+          }
+          & .shoes-h1Second {
+            font-size: 2rem;
+            letter-spacing: 0.8rem;
+          }
+        }
+      }
     }
     & .card-list-container {
       min-width: 0%;
