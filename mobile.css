@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
   .header {
-    min-height: 85vh;
+    min-height: 87vh;
   }
   .header nav #logo {
     width: 4.5rem;
@@ -16,7 +16,7 @@
     bottom: 5%;
   }
   .slider {
-    height: 85vh;
+    height: 87vh;
   }
   .section-Top-title {
     font-size: 2rem;
