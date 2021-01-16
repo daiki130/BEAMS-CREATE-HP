@@ -37,7 +37,6 @@ class ScrollObserver {
     }
     this.io = new IntersectionObserver(callback.bind(this), this.options);
     this.io.POLL_INTERVAL = 100;
-
     this.els.forEach(el => this.io.observe(el)); //監視対象のDOMを登録
   }
   destroy() {

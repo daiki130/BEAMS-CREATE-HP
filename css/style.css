@@ -417,28 +417,72 @@ body::-webkit-scrollbar-track {
   opacity: 0;
   transition: all 0.5s;
 }
-.card.inview {
-  transform: translate(0%, 0%);
-  opacity: 1;
-}
 
+@keyframes shoesAnimation {
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
 .card:nth-of-type(1) {
   background: linear-gradient(45deg,rgb(161, 138, 114), rgb(242, 139, 107) );
+}
+.card:nth-of-type(1).inview {
+  animation-name: shoesAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 .card:nth-of-type(2) {
   background: linear-gradient(45deg, #0789f1, #ffffff, #e68e0c);
 }
+.card:nth-of-type(2).inview {
+  animation-name: shoesAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
 .card:nth-of-type(3) {
   background: linear-gradient(45deg, rgb(57 54 66), rgb(239 221 220));
+}
+.card:nth-of-type(3).inview {
+  animation-name: shoesAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 .card:nth-of-type(4) {
   background: linear-gradient(45deg, rgb(57 54 66), rgb(243 161 13));
 }
+.card:nth-of-type(4).inview {
+  animation-name: shoesAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
 .card:nth-of-type(5) {
   background: linear-gradient(45deg, rgb(29 37 49), rgb(81 92 162));
 }
+.card:nth-of-type(5).inview {
+  animation-name: shoesAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
 .card:nth-of-type(6) {
   background: linear-gradient(45deg, rgb(8 9 10), rgb(230 209 21));
+}
+.card:nth-of-type(6).inview {
+  animation-name: shoesAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 .card-header {
   max-height: 60px;
