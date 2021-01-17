@@ -8,6 +8,9 @@
   .header nav .grid-column {
     display: none;
   }
+  .header .bannerSection {
+    display: block;
+  }
   .header .headline {
     font-size: 50px;
   }
