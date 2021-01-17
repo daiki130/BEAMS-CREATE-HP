@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   let windowWidth = document.body.clientWidth;
   if(windowWidth >= 500) {
-    // const header = document.querySelector(".header");
     class Menu {
       constructor() {
         this.nav = document.createElement("nav");
