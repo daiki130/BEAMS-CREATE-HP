@@ -638,10 +638,11 @@ body::-webkit-scrollbar-track {
 }
 
 .bannerSection {
-  position: relative;
+  position: fixed;
   width: 100%;
   background: #333;
   display: none;
+  z-index: -1;
 }
 .banner {
   position: absolute;
@@ -653,13 +654,36 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   flex-wrap: wrap;
 }
+/* .banner::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url("../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg");
+  background-size: cover;
+  animation: animate 0.75s ease-in-out forwards;
+  /* animation: animate 0.75s ease-in-out; */
+  /* background-position: center;
+  z-index: -1;
+} */
+/* .banner .blocks {
+  position: relative;
+  display: block;
+  width: 10vw;
+  height: 4vh;
+} */
 .banner .blocks {
   position: relative;
   display: block;
   width: 10vw;
   height: 4vh;
+  z-index: 1;
   animation: animate 0.75s ease-in-out forwards;
 }
+
 .banner .blocks:nth-child(even) {
   animation: animate 1s ease-in-out forwards;
 }
@@ -678,8 +702,7 @@ body::-webkit-scrollbar-track {
   50% {
     opacity: 1;
     background: url("../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg");
-    /* background-size: cover; */
-    background-size: 100% 100%;
+    background-size: 50rem;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -688,8 +711,7 @@ body::-webkit-scrollbar-track {
     opacity: 1;
     transform: scale(1) translateY(0px);
     background: url("../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg");
-    /* background-size: cover; */
-    background-size: 100% 100%;
+    background-size: 50rem;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
