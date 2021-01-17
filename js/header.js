@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+  let windowHight = window.innerHeight;
+  const header = document.querySelector(".header");
+  const bannerSection = document.querySelector(".bannerSection");
+  header.style.height = windowHight + "px";
+  bannerSection.style.height = windowHight + "px";
+  console.log(header);
+  console.log(bannerSection);
+
   const slider = document.querySelector(".slider");
   const logo = document.querySelector("#logo");
   const body = document.querySelector("body");
@@ -6,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   let windowWidth = document.body.clientWidth;
   if(windowWidth >= 500) {
-    const header = document.querySelector(".header");
+    // const header = document.querySelector(".header");
     class Menu {
       constructor() {
         this.nav = document.createElement("nav");
