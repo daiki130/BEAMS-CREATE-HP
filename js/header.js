@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  // const hero = document.querySelector(".hero");
   const slider = document.querySelector(".slider");
-  // const logo = document.querySelector("#logo");
-  // const headline = document.querySelector(".headline");
+  const logo = document.querySelector("#logo");
   const body = document.querySelector("body");
   const SectionContainerVideo = document.querySelector(".section-container-video");
-  // const gridColumns = document.querySelectorAll(".grid-column");
   
   let windowWidth = document.body.clientWidth;
   if(windowWidth >= 500) {
@@ -13,11 +10,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     class Menu {
       constructor() {
         this.nav = document.createElement("nav");
-        // 画像設定
-        this.logoImg = document.createElement('img');
-        this.logoImg.id = "logo";
-        this.logoImg.src = "./img/BEAMS.png"; // 画像パス
-        this.logoImg.alt = "BEAMS_LOGO"; // 代替テキスト
         // pタグ設定
         this.p1 = document.createElement("p");
         this.p1.className = "grid-column";
@@ -50,7 +42,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         this._appendChild();
       }
       _appendChild() {
-        this.nav.appendChild(this.logoImg);
+        // this.nav.appendChild(this.logoImg);
         this.nav.appendChild(this.p1);
         this.nav.appendChild(this.p2);
         this.nav.appendChild(this.p3);
@@ -68,7 +60,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     tl.fromTo(headerHeaading.div, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
       .fromTo(headerHeaading.div, 1.3, {width: "100%"}, {width: "80%", ease: Power2.easeInOut})
       .fromTo(slider,1.3, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.2")
-      .fromTo(headerHeaading.logoImg, 0.6, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
+      .fromTo(logo, 0.6, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
       .fromTo(headerHeaading.h1, 0.1, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
       headerHeaading.Ps.forEach(P => {
         tl.fromTo(P, 0.5, {opacity: "0", x: 30}, {opacity: "1", x: 0, ease: Power2.easeInOut}, "-=0.5")
