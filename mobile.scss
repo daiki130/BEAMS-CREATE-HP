@@ -1,13 +1,19 @@
 @media screen and (max-width: 500px) {
   .header {
-    min-height: 87vh;
+    // min-height: 87vh;
     nav {
       & #logo {
         width: 4.5rem;
-      } 
-      & .grid-column {
-        display: none;
       }
+      & .header-right {
+        height: 100%;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+      // & .grid-column {
+      //   display: none;
+      // }
     }
     .bannerSection {
       display: block;
