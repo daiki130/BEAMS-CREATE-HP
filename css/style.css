@@ -702,7 +702,7 @@ body::-webkit-scrollbar-track {
   50% {
     opacity: 1;
     background: url("../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg");
-    background-size: 50rem;
+    /* background-size: 50rem; */
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -711,7 +711,7 @@ body::-webkit-scrollbar-track {
     opacity: 1;
     transform: scale(1) translateY(0px);
     background: url("../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg");
-    background-size: 50rem;
+    /* background-size: 50rem; */
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
