@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const bannerSection = document.querySelector(".bannerSection");
   header.style.height = windowHight + "px";
   bannerSection.style.height = windowHight + "px";
-  console.log(header);
-  console.log(bannerSection);
 
   const slider = document.querySelector(".slider");
   const logo = document.querySelector("#logo");

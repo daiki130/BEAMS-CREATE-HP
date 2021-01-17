@@ -663,6 +663,7 @@ body::-webkit-scrollbar-track {
   width: 10vw;
   height: 4vh;
   animation: animate 0.75s ease-in-out forwards;
+  background-size: cover;
 }
 .banner .blocks:nth-child(even) {
   animation: animate 1s ease-in-out forwards;
@@ -682,18 +683,18 @@ body::-webkit-scrollbar-track {
   50% {
     opacity: 1;
     background: url("../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg");
+    /* background-size: cover; */
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
   }
   100% {
     opacity: 1;
     transform: scale(1) translateY(0px);
     background: url("../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg");
+    /* background-size: cover; */
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
   }
 }
