@@ -62,10 +62,10 @@
             &::before {
               content: "";
               position: absolute;
-              top: 0;
+              bottom: 0;
               right: 0;
-              width: 2px;
-              height: 100%;
+              width: 1.3rem;
+              height: 2px;
               background: black;
               /* animation: blinkCursor 0.8s steps(3) forwards 4; */
               animation: blinkCursor 0.8s steps(3) forwards infinite;
@@ -82,10 +82,10 @@
             &::before {
               content: "";
               position: absolute;
-              top: 0;
+              bottom: 0;
               right: 0;
-              width: 2px;
-              height: 100%;
+              width: 1.3rem;
+              height: 2px;
               background: black;
               /* animation: blinkCursor 0.8s steps(3) forwards 4; */
               animation: blinkCursor 0.8s steps(3) forwards infinite;
