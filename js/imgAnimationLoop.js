@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
   let windowWidth = document.body.clientWidth;
-  if(windowWidth <= 500) {
+  if(windowWidth >= 600) {
     const banner = document.getElementsByClassName("banner")[0];
     const blocks = document.getElementsByClassName("blocks");
     
