@@ -6,9 +6,9 @@
     display: none;
   }
   .header nav .mobile-menu {
-    -ms-grid-column: 6;
+    -ms-grid-column: 9;
     -ms-grid-column-span: 1;
-    grid-column: 6/7;
+    grid-column: 9/10;
     height: 100%;
     width: 100%;
     display: -webkit-box;
@@ -121,6 +121,24 @@
 @media screen and (min-width: 600px) {
   .mobile-menu {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header nav #logo {
+    width: 6rem;
+  }
+  header nav .grid-column {
+    font-size: 0.8rem;
+  }
+  header .headline {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .card {
+    margin: auto 45px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
