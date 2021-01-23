@@ -6,38 +6,28 @@
     display: none;
   }
   .header nav .mobile-menu {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 1;
     grid-column: 6/7;
     height: 100%;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .header .headline {
     top: 70%;
     font-size: 3rem;
   }
+
   .section-Top-title {
     font-size: 2rem;
   }
+
   .section-product-container .section-product-main {
     position: absolute;
     top: 50%;
     right: 0;
     opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     z-index: 2;
     width: 80%;
     margin-left: 0rem;
@@ -56,6 +46,7 @@
   .section-product-container .section-product-imgs .product-img:nth-child(1) {
     opacity: 1;
   }
+
   .shoes-container {
     min-height: 330vh;
   }
@@ -65,7 +56,7 @@
   }
   .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1 {
     font: bold 300% Consolas, Monaco, monospace;
-    border-right: .1em solid black;
+    border-right: 0.1em solid black;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 7s steps(21, end), blink-caret 0.5s step-end infinite alternate;
@@ -76,7 +67,7 @@
   }
   .shoes-container .shoes-box .shoes-Hcontainer .shoes-h2TopContainer .shoes-h1 {
     font: bold 300% Consolas, Monaco, monospace;
-    border-right: .1em solid black;
+    border-right: 0.1em solid black;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 7s steps(21, end), blink-caret 0.5s step-end infinite alternate;
@@ -93,34 +84,26 @@
     margin: 20px auto;
   }
   .shoes-container .card-list-container .card:nth-of-type(1) {
-    -webkit-transform: translate(-120%, 0%);
-            transform: translate(-120%, 0%);
+    transform: translate(-120%, 0%);
   }
   .shoes-container .card-list-container .card:nth-of-type(2) {
-    -webkit-transform: translate(120%, 0%);
-            transform: translate(120%, 0%);
+    transform: translate(120%, 0%);
   }
   .shoes-container .card-list-container .card:nth-of-type(3) {
-    -webkit-transform: translate(-120%, 0%);
-            transform: translate(-120%, 0%);
+    transform: translate(-120%, 0%);
   }
   .shoes-container .card-list-container .card:nth-of-type(4) {
-    -webkit-transform: translate(120%, 0%);
-            transform: translate(120%, 0%);
+    transform: translate(120%, 0%);
   }
   .shoes-container .card-list-container .card:nth-of-type(5) {
-    -webkit-transform: translate(-120%, 0%);
-            transform: translate(-120%, 0%);
+    transform: translate(-120%, 0%);
   }
   .shoes-container .card-list-container .card:nth-of-type(6) {
-    -webkit-transform: translate(120%, 0%);
-            transform: translate(120%, 0%);
+    transform: translate(120%, 0%);
   }
 }
-
 @media screen and (min-width: 600px) {
   .mobile-menu {
     display: none;
   }
 }
-/*# sourceMappingURL=mobile.css.map */
