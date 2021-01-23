@@ -6,16 +6,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const logo = document.querySelector("#logo");
   const heroSection = document.querySelector(".hero-section");
   const heroImg = document.querySelector(".heroImg");
-
   const hero = document.querySelector(".hero");
   const headline = document.querySelector(".headline");
   const gridColumns = document.querySelectorAll(".grid-column");
+  const drawerContainer = document.querySelector(".drawer-container");
 
   // mobile-menu__btnアニメーション
   const mobileMenuBtn = document.querySelector(".mobile-menu__btn");
 
   mobileMenuBtn.addEventListener("click", () => {
     mobileMenuBtn.classList.toggle("menu-open");
+    drawerContainer.classList.toggle("right");
   });
 
   const tl = new TimelineMax();

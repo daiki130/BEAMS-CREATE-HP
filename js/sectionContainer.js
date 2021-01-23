@@ -5,14 +5,8 @@ const SectionProductMain = document.querySelector(".section-product-main");
 const SectionProductImgs = document.querySelector(".section-product-imgs");
 const ProductImgs = SectionProductImgs.querySelectorAll(".product-img");
 
-
-const cb = function(entries, observer) {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) { //SectionTopTitleが画面上に入ってきた時イベント
-      SectionTopLists.forEach((SectionTopList, i) => {
-        SectionTopList.classList.add(`boundAnimation${i}`);
-      });
-      tl.fromTo(SectionProductMain, 1, {x: "-120%", opacity: 0}, {x: "0%", opacity: 1, ease: Power2.easeInOut}, "+=2")
+function sectionAnimation () {
+  tl.fromTo(SectionProductMain, 1, {x: "-120%", opacity: 0}, {x: "0%", opacity: 1, ease: Power2.easeInOut}, "+=2")
         .fromTo(ProductImgs[0], 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
         .fromTo(SectionProductImgs, 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, ease: Power2.easeInOut}, "-=1")
         .fromTo(ProductImgs[1], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
@@ -23,6 +17,15 @@ const cb = function(entries, observer) {
         .to(ProductImgs[2], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
         .fromTo(ProductImgs[4], 1.5, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
         .to(ProductImgs[3], 1.5, {opacity: 0, ease: Power2.easeInOut}, "-=1.5")
+}
+
+const cb = function(entries, observer) {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) { //SectionTopTitleが画面上に入ってきた時イベント
+      SectionTopLists.forEach((SectionTopList, i) => {
+        SectionTopList.classList.add(`boundAnimation${i}`);
+      });
+      sectionAnimation();
       observer.unobserve(entry.target); //監視の停止 entry.target = SectionTopTitleのこと
     }
   });

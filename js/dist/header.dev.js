@@ -10,11 +10,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
   var heroImg = document.querySelector(".heroImg");
   var hero = document.querySelector(".hero");
   var headline = document.querySelector(".headline");
-  var gridColumns = document.querySelectorAll(".grid-column"); // mobile-menu__btnアニメーション
+  var gridColumns = document.querySelectorAll(".grid-column");
+  var drawerContainer = document.querySelector(".drawer-container"); // mobile-menu__btnアニメーション
 
   var mobileMenuBtn = document.querySelector(".mobile-menu__btn");
   mobileMenuBtn.addEventListener("click", function () {
     mobileMenuBtn.classList.toggle("menu-open");
+    drawerContainer.classList.toggle("right");
   });
   var tl = new TimelineMax();
   sliderAnimation();

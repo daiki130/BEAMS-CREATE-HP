@@ -24,7 +24,7 @@ a {
   transition: transform 0.3s ease;
   transition-property: background, transform; /* トランジション効果を適用する CSS プロパティを指定 */
   transform-origin: 100% 100%; /* transformの原点を設定 */
-  z-index: 2;
+  z-index: 4;
   backdrop-filter: grayscale(); /* モノトーン */
   pointer-events: none; 
 }
@@ -51,9 +51,23 @@ a {
   z-index: -3;
 }
 
+.drawer-container {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 3;
+  transition: right 0.7s;
+}
+
+.right {
+  right: 0;
+}
+
 nav {
   display: grid;
-  /* grid-template-columns: 10% 1fr 10% 10% 10% 10% 10%; */
   grid-template-columns: 10% 1fr 5% 10% 5% 10% 5% 10% 5% 10% 5%;
   min-height: 10vh;
   color: white;
@@ -119,19 +133,19 @@ nav {
   transition-delay: 70ms;
   -webkit-transform: translateY(7px) rotate(135deg);
   transform: translateY(7px) rotate(135deg);
-  background-color: black;
+  background-color: rgb(249 103 17);
 }
 .menu-open.mobile-menu__btn > span:nth-of-type(2) {
   -webkit-transform: translateX(-18px) scaleX(0);
   transform: translateX(-18px) scaleX(0);
-  background-color: black;
+  background-color: rgb(249 103 17);
 }
 .menu-open.mobile-menu__btn > span:nth-of-type(3) {
   -webkit-transition-delay: 140ms;
   transition-delay: 140ms;
   -webkit-transform: translateY(-10px) rotate(-135deg);
   transform: translateY(-10px) rotate(-135deg);
-  background-color: black;
+  background-color: rgb(249 103 17);
 }
 
 .hero-section {
