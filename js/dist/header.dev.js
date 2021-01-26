@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       opacity: "1",
       x: 0,
       ease: Power2.easeInOut
-    }, "-=0.5").fromTo(headline, 0.1, {
+    }, "-=0.5").fromTo(headline, 0.5, {
       opacity: "0",
       x: 30
     }, {

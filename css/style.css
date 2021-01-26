@@ -37,7 +37,6 @@ a {
 }
 
 .header {
-  /* min-height: 100vh; */
   position: relative;
 }
 
@@ -520,8 +519,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 65%;
-  /* width: 75%; */
+  width: 75%;
   height: 90%;
   margin: auto;
   min-width: 900px;
@@ -534,6 +532,7 @@ body::-webkit-scrollbar-track {
   box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
   border-radius: 16px;
   max-width: 295px;
+  /* min-width: 288px; */
   min-height: 320px;
   margin: auto;
   transform-style: preserve-3d;
