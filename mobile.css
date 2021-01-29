@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 664px) {
   .header nav #logo {
     width: 5.5rem;
   }
@@ -56,12 +56,9 @@
   .section-product-container .section-product-imgs .product-img:nth-child(1) {
     opacity: 1;
   }
-  .shoes-container {
-    min-height: 330vh;
-  }
   .shoes-container .shoes-box .shoes-Hcontainer {
-    min-height: 7%;
     width: 270px;
+    height: 100px;
   }
   .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1 {
     font: bold 300% Consolas, Monaco, monospace;
@@ -89,7 +86,6 @@
     min-width: 0%;
   }
   .shoes-container .card-list-container .card {
-    width: 100%;
     margin: 20px auto;
   }
   .shoes-container .card-list-container .card:nth-of-type(1) {
@@ -136,9 +132,30 @@
   }
 }
 
-@media screen and (min-width: 1580px) {
+@media screen and (max-width: 1000px) {
+  .card-header .card-header-Title {
+    font-size: 0.8rem;
+  }
   .card {
-    margin: auto 45px;
+    height: 280px;
+    width: 245px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .card-header .card-header-Title {
+    font-size: 0.8rem;
+    height: 30px;
+  }
+  .card {
+    height: 280px;
+    width: 245px;
+  }
+}
+
+@media screen and (min-width: 1390px) {
+  .card-list-container {
+    width: 1030px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
