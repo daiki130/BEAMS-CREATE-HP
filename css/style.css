@@ -406,53 +406,40 @@ body::-webkit-scrollbar-track {
 
 .shoes-container {
   width: 100%;
-  min-height: 120vh;
+  /* min-height: 120vh; */
   background: darkcyan;
   position: relative;
   overflow: hidden;
 }
 .shoes-box {
-  position: relative;
-  top: 12vh;
-  height: 108vh;
+  /* height: 120vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .shoes-Hcontainer {
-  position: relative;
-  top: 0;
-  min-height: 10%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 0 auto;
+  margin: 50px auto 0;
 }
 .shoes-h1TopContainer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 50%;
-}
-.shoes-h2TopContainer {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin: auto;
 }
 .shoes-h1 {
   margin: auto;
   font-size: 3rem;
   font-family: "Martel", serif;
-  width: 100%;
   font-weight: bold;
   z-index: 1;
   /* animation: typing 10s steps(8) infinite; */
   overflow: hidden;
-  position: absolute;
-  left: 0;
+  /* position: absolute;
+  left: 0; */
   height: 100%;
   width: 100%;
   align-items: center;
@@ -507,11 +494,6 @@ body::-webkit-scrollbar-track {
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .card-list {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
 }
@@ -521,20 +503,17 @@ body::-webkit-scrollbar-track {
   justify-content: space-between;
   width: 75%;
   height: 90%;
-  margin: auto;
-  min-width: 900px;
+  margin: 50px auto;
 }
 .card {
-  height: 40%;
-  width: 32%;
+  height: 300px;
+  width: 260px;
   padding: 1.5rem 1rem;
   background: #ffffff;
   box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
   border-radius: 16px;
   max-width: 295px;
-  /* min-width: 288px; */
-  min-height: 320px;
-  margin: auto;
+  margin: 20px auto;
   transform-style: preserve-3d;
   perspective: 1000px;
   display: flex;
@@ -542,6 +521,7 @@ body::-webkit-scrollbar-track {
   transform: translate(-120%, 0%);
   opacity: 0;
   transition: all 0.5s;
+  position: relative;
 }
 
 @keyframes shoesAnimation {
@@ -610,18 +590,21 @@ body::-webkit-scrollbar-track {
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-.card-header {
-  max-height: 60px;
-}
 .card-header-Title {
   font-size: 1.3rem;
   width: 90%;
   margin: 0 auto;
-  min-height: 60px;
   transition: all 0.75s ease-out;
 }
 .longTitle {
   font-size: 1.1rem;
+}
+.card-main {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1.5rem;
+
 }
 .card-detail {
   position: relative;
@@ -629,11 +612,11 @@ body::-webkit-scrollbar-track {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   margin: 1rem 0 0;
-  max-height: 146px;
+  height: 146px;
 }
 .sneaker {
   position: relative;
-  height: 15vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -653,7 +636,7 @@ body::-webkit-scrollbar-track {
 .sizes {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
   justify-content: space-between;
   transition: all 0.75s ease-out;
   overflow-y: scroll;
@@ -678,6 +661,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-top: 5px;
 }
 .purchaseButton {
   width: 100%;

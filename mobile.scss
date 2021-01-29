@@ -1,6 +1,5 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 664px) {
   .cursor {
-    // display: none;
   }
   .header {
     nav {
@@ -54,11 +53,10 @@
     }
   }
   .shoes-container {
-    min-height: 330vh;
     & .shoes-box {
       & .shoes-Hcontainer {
-        min-height: 7%;
         width: 270px;
+        height: 100px;
         & .shoes-h1TopContainer {
           & .shoes-h1 {
             // animation: typing 10s steps(8) infinite;
@@ -120,7 +118,6 @@
     & .card-list-container {
       min-width: 0%;
       & .card {
-        width: 100%;
         margin: 20px auto;
         &:nth-of-type(1) {
           transform: translate(-120%, 0%);
@@ -165,8 +162,35 @@
     }
   }
 }
-@media screen and (min-width: 1580px) {
+@media screen and (max-width: 1000px) {
+  .card-header {
+    & .card-header-Title {
+      font-size: 0.8rem;
+    }
+  }
+  .shoes-box {
+  }
   .card {
-    margin: auto 45px;
+    height: 280px;
+    width: 245px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .card-header {
+    & .card-header-Title {
+      font-size: 0.8rem;
+      height: 30px;
+    }
+  }
+  .shoes-box {
+  }
+  .card {
+    height: 280px;
+    width: 245px;
+  }
+}
+@media screen and (min-width: 1390px) {
+  .card-list-container {
+    width: 1030px;
   }
 }
