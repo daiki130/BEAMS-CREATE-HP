@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 664px) {
   .header nav #logo {
     width: 5.5rem;
@@ -138,5 +139,15 @@
 @media screen and (min-width: 1390px) {
   .card-list-container {
     width: 1030px;
+  }
+}
+/* フッターレスポンシブデザイン */
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+
+  .footerR {
+    display: block;
   }
 }
