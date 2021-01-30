@@ -194,3 +194,12 @@
     width: 1030px;
   }
 }
+/* フッターレスポンシブデザイン */
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+  .footerR {
+    display: block;
+  }
+}

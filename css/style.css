@@ -1422,7 +1422,7 @@ footer small {
   font-size: 0.5rem;
 }
 
-/* フッターレスポンシブデザイン */
+/* フッターレスポンシブデザイン
 @media screen and (max-width: 768px) {
   footer {
     display: none;
@@ -1430,4 +1430,4 @@ footer small {
   .footerR {
     display: block;
   }
-}
+} */
