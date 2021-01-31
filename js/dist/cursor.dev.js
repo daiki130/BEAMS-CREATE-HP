@@ -20,3 +20,11 @@ gridColumns.forEach(function (gridColumn) {
     gridColumn.classList.remove("hovered-Link");
   });
 });
+footer.addEventListener("mouseover", function () {
+  mouseCursor.style.border = "none";
+  mouseCursor.style.backdropFilter = "none";
+});
+footer.addEventListener("mouseout", function () {
+  mouseCursor.style.border = "2px solid black";
+  mouseCursor.style.backdropFilter = "grayscale()";
+});
