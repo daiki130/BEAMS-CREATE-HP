@@ -413,13 +413,13 @@ body::-webkit-scrollbar-track {
   width: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 .shoes-Hcontainer {
-  height: 200px;
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 50px auto 0;
+  margin: 120px auto 30px;
   opacity: 1;
 }
 .shoes-h1TopContainer {
@@ -499,7 +499,7 @@ body::-webkit-scrollbar-track {
   justify-content: space-between;
   width: 75%;
   height: 90%;
-  margin: 50px auto;
+  margin: 0px auto 50px;
 }
 .card {
   height: 300px;
