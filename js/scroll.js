@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         trigger: ".shoes-container",
         start: "top top", //Animation start at this point
         end: "bottom top", //Animation end at this point
-        markers: true,
+        // markers: true,
         scrub: true, // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
         pin: true 
       }
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         trigger: ".shoes-container",
         start: "top top", //Animation start at this point
         end: "center center", //Animation end at this point
-        markers: true,
+        // markers: true,
         scrub: true, // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
         pin: true 
       }
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         trigger: ".shoes-container",
         start: "700px center", //Animation start at this point
         end: "bottom bottom", //Animation end at this point
-        markers: true,
+        // markers: true,
         scrub: true, // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
         pin: true 
       }
