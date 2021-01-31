@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         //Animation start at this point
         end: "bottom top",
         //Animation end at this point
-        markers: true,
+        // markers: true,
         scrub: true,
         // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
         pin: true
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         //Animation start at this point
         end: "center center",
         //Animation end at this point
-        markers: true,
+        // markers: true,
         scrub: true,
         // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
         pin: true
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         //Animation start at this point
         end: "bottom bottom",
         //Animation end at this point
-        markers: true,
+        // markers: true,
         scrub: true,
         // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
         pin: true
