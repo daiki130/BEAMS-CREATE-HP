@@ -420,6 +420,7 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   width: 400px;
   margin: 50px auto 0;
+  opacity: 1;
 }
 .shoes-h1TopContainer {
   display: flex;
@@ -513,8 +514,9 @@ body::-webkit-scrollbar-track {
   perspective: 1000px;
   display: flex;
   flex-direction: column;
-  transform: translate(-120%, 0%);
-  opacity: 0;
+  /* transform: translate(-120%, 0%); */
+  /* opacity: 0; */
+  opacity: 1;
   transition: all 0.5s;
   position: relative;
 }
