@@ -5,13 +5,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   if (windowWidth >= 1050) {
     gsap.timeline({
+      ease: Linear.easeNone,
       scrollTrigger: {
         trigger: ".shoes-container",
         start: "top top",
         //Animation start at this point
         end: "bottom top",
         //Animation end at this point
-        // markers: true,
+        markers: true,
         scrub: true,
         // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
         pin: true
@@ -43,17 +44,17 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
 
   if (windowWidth <= 1049) {
-    gsap.timeline({
+    ease: Linear.easeNone, gsap.timeline({
       scrollTrigger: {
         trigger: ".shoes-container",
-        start: "top top",
+        start: "top center",
         //Animation start at this point
-        end: "center center",
+        end: "center bottom",
         //Animation end at this point
         // markers: true,
-        scrub: true,
-        // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
-        pin: true
+        scrub: true // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
+        // pin: true
+
       }
     }).from(".shoes-container", {
       opacity: 0
@@ -67,17 +68,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
       x: innerWidth * 1,
       opacity: 0
     });
+
     gsap.timeline({
       scrollTrigger: {
         trigger: ".shoes-container",
-        start: "700px center",
+        start: "600px center",
         //Animation start at this point
         end: "bottom bottom",
         //Animation end at this point
         // markers: true,
-        scrub: true,
-        // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
-        pin: true
+        scrub: true // アニメーションをスクロール位置にリンクさせる ※スクラバーのような動き(GreenSock公式サイト)
+        // pin: true
+
       }
     }).from(".card3", {
       y: innerHeight * 1,
