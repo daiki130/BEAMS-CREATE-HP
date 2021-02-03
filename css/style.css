@@ -404,6 +404,8 @@ body::-webkit-scrollbar-track {
 
 
 .shoes-container {
+  position: absolute;
+  top: 0;
   width: 100%;
   background: darkcyan;
   position: relative;
