@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
 
   if (windowWidth <= 1049) {
-    ease: Linear.easeNone, gsap.timeline({
+    gsap.timeline({
+      ease: Linear.easeNone,
       scrollTrigger: {
         trigger: ".shoes-container",
         start: "top center",
@@ -68,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
       x: innerWidth * 1,
       opacity: 0
     });
-
     gsap.timeline({
       scrollTrigger: {
         trigger: ".shoes-container",
