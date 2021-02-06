@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })  
   }
   if (windowWidth <= 1049) {
-    ease: Linear.easeNone,
     gsap.timeline({
+      ease: Linear.easeNone,
       scrollTrigger: {
         trigger: ".shoes-container",
         start: "top center", //Animation start at this point
