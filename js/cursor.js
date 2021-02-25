@@ -5,11 +5,11 @@ let footer = document.querySelector("footer");
 window.addEventListener("mousemove", cursor);
 
 function cursor(e) {
-  mouseCursor.style.top = e.pageY + 'px';
-  mouseCursor.style.left = e.pageX + 'px';
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
 }
 
-gridColumns.forEach(gridColumn => {
+gridColumns.forEach((gridColumn) => {
   gridColumn.addEventListener("mouseover", () => {
     mouseCursor.classList.add("link-grow");
     gridColumn.classList.add("hovered-Link");
