@@ -2,6 +2,9 @@
 const cursor = document.querySelector(".cursor")! as HTMLElement;
 const footer = document.querySelector("footer")! as HTMLElement;
 const footerR = document.querySelector(".footerR")! as HTMLElement;
+const mobileMenuBtn = document.querySelector(
+  ".mobile-menu__btn"
+)! as HTMLButtonElement;
 const gridColumns: NodeListOf<HTMLElement> = document.querySelectorAll(
   ".grid-column"
 );
@@ -38,4 +41,12 @@ footerR.addEventListener("mouseover", () => {
 });
 footerR.addEventListener("mouseout", () => {
   footerMouseoutEvent();
+});
+
+// ハンバーガーメニューホバー時のcursorイベント
+mobileMenuBtn.addEventListener("mouseover", () => {
+  cursor.style.display = "none";
+});
+mobileMenuBtn.addEventListener("mouseout", () => {
+  cursor.style.display = "block";
 });
