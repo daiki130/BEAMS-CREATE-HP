@@ -32,9 +32,6 @@ a {
   transform: scale(2);
   background: black;
 }
-.hovered-Link {
-  color: antiquewhite;
-}
 
 .header {
   position: relative;
