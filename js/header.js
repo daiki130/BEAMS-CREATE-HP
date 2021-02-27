@@ -5,19 +5,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const slider = document.querySelector(".slider");
   const logo = document.querySelector("#logo");
   const heroSection = document.querySelector(".hero-section");
-  const heroImg = document.querySelector(".heroImg");
   const hero = document.querySelector(".hero");
   const headline = document.querySelector(".headline");
   const gridColumns = document.querySelectorAll(".grid-column");
-  const drawer = document.querySelector(".drawer");
-
-  // mobile-menu__btnアニメーション
   const mobileMenuBtn = document.querySelector(".mobile-menu__btn");
-
-  mobileMenuBtn.addEventListener("click", () => {
-    mobileMenuBtn.classList.toggle("menu-open");
-    drawer.classList.toggle("right");
-  });
 
   const tl = new TimelineMax();
   sliderAnimation();

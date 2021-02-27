@@ -2,12 +2,14 @@
 const cursor = document.querySelector(".cursor")! as HTMLElement;
 const footer = document.querySelector("footer")! as HTMLElement;
 const footerR = document.querySelector(".footerR")! as HTMLElement;
+const Body = document.querySelector("body")! as HTMLBodyElement;
 const mobileMenuBtn = document.querySelector(
   ".mobile-menu__btn"
 )! as HTMLButtonElement;
 const gridColumns: NodeListOf<HTMLElement> = document.querySelectorAll(
   ".grid-column"
 );
+const drawer = document.querySelector(".drawer")! as HTMLDivElement;
 
 // gridColumnホバー時のcursorイベント
 gridColumns.forEach((gridColumn) => {
@@ -48,5 +50,18 @@ mobileMenuBtn.addEventListener("mouseover", () => {
   cursor.style.display = "none";
 });
 mobileMenuBtn.addEventListener("mouseout", () => {
-  cursor.style.display = "block";
+  cursor.style.display = "none";
+});
+
+// ハンバーガーメニュークリック時のcursorイベント
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenuBtn.classList.toggle("menu-open");
+  drawer.classList.toggle("right");
+  if (drawer.className === "drawer right") {
+    cursor.style.display = "none";
+    Body.style.cursor = "pointer";
+  } else {
+    cursor.style.display = "block";
+    Body.style.cursor = "none";
+  }
 });
