@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: blanchedalmond;
+  z-index: 3;
+  transition: right 0.7s;
+  display: flex;
+  flex-direction: column;
+  &.right {
+    right: 0;
+  }
+  & .drawer-container {
+    height: 30rem;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    & .drawer-menu {
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5rem;
+      margin: auto 0;
+      padding: 20px 10px;
+      color: black;
+    }
+  }
+}
