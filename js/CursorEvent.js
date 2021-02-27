@@ -3,6 +3,7 @@
 var cursor = document.querySelector(".cursor");
 var footer = document.querySelector("footer");
 var footerR = document.querySelector(".footerR");
+var mobileMenuBtn = document.querySelector(".mobile-menu__btn");
 var gridColumns = document.querySelectorAll(".grid-column");
 // gridColumnホバー時のcursorイベント
 gridColumns.forEach(function (gridColumn) {
@@ -34,4 +35,11 @@ footerR.addEventListener("mouseover", function () {
 });
 footerR.addEventListener("mouseout", function () {
     footerMouseoutEvent();
+});
+// ハンバーガーメニューホバー時のcursorイベント
+mobileMenuBtn.addEventListener("mouseover", function () {
+    cursor.style.display = "none";
+});
+mobileMenuBtn.addEventListener("mouseout", function () {
+    cursor.style.display = "block";
 });
