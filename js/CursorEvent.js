@@ -3,8 +3,10 @@
 var cursor = document.querySelector(".cursor");
 var footer = document.querySelector("footer");
 var footerR = document.querySelector(".footerR");
+var Body = document.querySelector("body");
 var mobileMenuBtn = document.querySelector(".mobile-menu__btn");
 var gridColumns = document.querySelectorAll(".grid-column");
+var drawer = document.querySelector(".drawer");
 // gridColumnホバー時のcursorイベント
 gridColumns.forEach(function (gridColumn) {
     gridColumn.addEventListener("mouseover", function () {
@@ -41,5 +43,18 @@ mobileMenuBtn.addEventListener("mouseover", function () {
     cursor.style.display = "none";
 });
 mobileMenuBtn.addEventListener("mouseout", function () {
-    cursor.style.display = "block";
+    cursor.style.display = "none";
+});
+// ハンバーガーメニュークリック時のcursorイベント
+mobileMenuBtn.addEventListener("click", function () {
+    mobileMenuBtn.classList.toggle("menu-open");
+    drawer.classList.toggle("right");
+    if (drawer.className === "drawer right") {
+        cursor.style.display = "none";
+        Body.style.cursor = "pointer";
+    }
+    else {
+        cursor.style.display = "block";
+        Body.style.cursor = "none";
+    }
 });
