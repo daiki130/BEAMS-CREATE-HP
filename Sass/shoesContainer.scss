@@ -1,0 +1,196 @@
+.main-container {
+  position: relative;
+  & .shoes-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: darkcyan;
+    position: relative;
+    overflow: hidden;
+    & .shoes-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      & .shoes-Hcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 120px auto 30px;
+        opacity: 1;
+        & .shoes-h1TopContainer {
+          display: flex;
+          flex-direction: column;
+          margin-top: auto;
+          margin: auto;
+          & .shoes-h1 {
+            margin: auto;
+            font-size: 3rem;
+            font-family: "Martel", serif;
+            font-weight: bold;
+            z-index: 1;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            display: flex;
+          }
+        }
+      }
+      & .card-list {
+        display: flex;
+        flex-direction: column;
+        & .card-list-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 75%;
+          height: 90%;
+          margin: 0px auto 50px;
+          & .card {
+            height: 300px;
+            width: 260px;
+            padding: 1.5rem 1rem;
+            background: #ffffff;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2),
+              0px 0px 50px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            max-width: 295px;
+            margin: 20px auto;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            transition: all 0.5s;
+            position: relative;
+            &:nth-of-type(1) {
+              background: linear-gradient(
+                45deg,
+                rgb(161, 138, 114),
+                rgb(242, 139, 107)
+              );
+            }
+            &:nth-of-type(2) {
+              background: linear-gradient(45deg, #0789f1, #ffffff, #e68e0c);
+            }
+            &:nth-of-type(3) {
+              background: linear-gradient(
+                45deg,
+                rgb(57, 54, 66),
+                rgb(239, 221, 220)
+              );
+            }
+            &:nth-of-type(4) {
+              background: linear-gradient(
+                45deg,
+                rgb(57, 54, 66),
+                rgb(243, 161, 13)
+              );
+            }
+            &:nth-of-type(5) {
+              background: linear-gradient(
+                45deg,
+                rgb(29, 37, 49),
+                rgb(81, 92, 162)
+              );
+            }
+            &:nth-of-type(6) {
+              background: linear-gradient(
+                45deg,
+                rgb(8, 9, 10),
+                rgb(230, 209, 21)
+              );
+            }
+            & .card-header {
+              & .card-header-Title {
+                font-size: 1.1rem;
+                width: 90%;
+                margin: 0 auto;
+                transition: all 0.75s ease-out;
+              }
+            }
+            & .card-main {
+              position: absolute;
+              left: 1rem;
+              right: 1rem;
+              bottom: 1.5rem;
+              & .card-detail {
+                position: relative;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                align-items: center;
+                margin: 1rem 0 0;
+                height: 146px;
+                & .sneaker {
+                  position: relative;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 90%;
+                  margin-right: auto;
+                  & .shoes-img {
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.75s ease-out;
+                  }
+                }
+                & .sizes {
+                  display: flex;
+                  flex-direction: column;
+                  height: 90%;
+                  justify-content: space-between;
+                  transition: all 0.75s ease-out;
+                  overflow-y: scroll;
+                  margin: auto 0;
+                  & .sizesButton {
+                    background: none;
+                    border: none;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                    border-radius: 30px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    color: #585858;
+                    outline: none;
+                    height: 20%;
+                    width: 80%;
+                    margin: 4px auto;
+                    min-height: 26px;
+                    &.active {
+                      background-color: #585858;
+                      color: white;
+                    }
+                  }
+                }
+              }
+              & .purchase {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                margin-top: 5px;
+                & .purchaseButton {
+                  width: 100%;
+                  padding: 0.6rem 0rem;
+                  background: #f54642;
+                  border: none;
+                  color: white;
+                  cursor: pointer;
+                  border-radius: 30px;
+                  font-weight: bolder;
+                  transition: all 0.75s ease-out;
+                  margin-top: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
