@@ -397,6 +397,10 @@ footer .footer-container small {
   color: black;
 }
 
+.footerR .footer-containerR .footer-icons-containerR ul li a:hover span {
+  color: white;
+}
+
 .footerR .footer-containerR .footer-icons-containerR ul li a.fa-facebookRYA {
   width: 100%;
   height: 100%;
