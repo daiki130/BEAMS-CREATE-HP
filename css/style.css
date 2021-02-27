@@ -32,98 +32,26 @@ a {
   transform: scale(2);
   background: black;
 }
-
-.slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to left, rgb(61, 68, 82), rgb(208, 215, 228));
-  z-index: -3;
+.cursorStyle {
+  backdrop-filter: none;
 }
 
-.main-container {
-  position: relative;
+/* スクロールバーカスタマイズ */
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
-
-.section-containerFramework {
-  min-height: 100vh;
+body::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
-
-#section-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
+body::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
-.section-container-video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  backdrop-filter: invert(100%); /* 階調反転させる */
-}
-.section-Top-title {
-  position: absolute;
-  top: 10rem;
-  color: rgb(247, 231, 7);
-  font-size: 3.3rem;
-  z-index: 1;
-  font-family: "Martel", serif;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  font-weight: bold;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, #0004);
-}
-.section-Top-title-list {
-  margin-right: 1rem;
-  opacity: 0;
-}
-.section-product-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.section-product-main {
-  position: absolute;
-  top: 40%;
-  width: 40%;
-  margin-left: 6rem;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-}
-.section-product-title {
-  font-size: 2rem;
-  font-family: "Martel", serif;
-  width: 100%;
-  text-align: center;
-  color: rgb(16, 17, 19);
-}
-.product-Paragraph {
-  background: linear-gradient(to right, white, rgb(169, 176, 192));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.1rem;
-  width: 100%;
-  font-weight: 600;
-  max-width: 25rem;
-  margin: 3rem auto;
+.sizes::-webkit-scrollbar {
+  display: none;
 }
 
 /*アニメーションキーフレーム*/
@@ -197,60 +125,6 @@ a {
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   animation-delay: 1.6s;
-}
-
-/* Jacket */
-.section-product-imgs {
-  position: relative;
-  top: 20rem;
-  height: 50%;
-  width: 50%;
-  margin-left: auto;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.product-img {
-  position: absolute;
-  top: 0;
-  object-fit: scale-down;
-  height: 100%;
-  cursor: pointer;
-}
-.product-img:nth-child(1) {
-  opacity: 0;
-}
-.product-img:nth-child(2) {
-  opacity: 0;
-}
-.product-img:nth-child(3) {
-  opacity: 0;
-}
-.product-img:nth-child(4) {
-  opacity: 0;
-}
-.product-img:nth-child(5) {
-  opacity: 0;
-}
-
-/* スクロールバーカスタマイズ */
-body::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-body::-webkit-scrollbar-thumb {
-  background: #201c29;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-}
-body::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
-}
-.sizes::-webkit-scrollbar {
-  display: none;
 }
 
 .shoes-container {
@@ -328,8 +202,6 @@ body::-webkit-scrollbar-track {
   perspective: 1000px;
   display: flex;
   flex-direction: column;
-  /* transform: translate(-120%, 0%); */
-  /* opacity: 0; */
   opacity: 1;
   transition: all 0.5s;
   position: relative;
@@ -463,7 +335,6 @@ body::-webkit-scrollbar-track {
   outline: none;
   height: 20%;
   width: 80%;
-  /* margin: auto; */
   margin: 4px auto;
   min-height: 26px;
 }
@@ -550,8 +421,4 @@ body::-webkit-scrollbar-track {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-}
-
-.cursorStyle {
-  backdrop-filter: none;
 }
