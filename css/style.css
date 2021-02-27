@@ -693,7 +693,6 @@ body::-webkit-scrollbar-track {
   width: 100%;
   background: #333;
   display: block;
-  /* z-index: -1; */
 }
 .banner {
   position: absolute;
@@ -710,8 +709,6 @@ body::-webkit-scrollbar-track {
   display: block;
   width: 10%;
   height: 12%;
-  /* width: 10%;
-  height: 9vh; */
   z-index: 1;
   animation: animate 0.75s ease-in-out forwards;
 }
@@ -748,4 +745,8 @@ body::-webkit-scrollbar-track {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
+}
+
+.cursorStyle {
+  backdrop-filter: none;
 }
