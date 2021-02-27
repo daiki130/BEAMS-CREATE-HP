@@ -26,7 +26,7 @@ a {
   transform-origin: 100% 100%; /* transformの原点を設定 */
   z-index: 4;
   backdrop-filter: grayscale(); /* モノトーン */
-  pointer-events: none; 
+  pointer-events: none;
 }
 .link-grow {
   transform: scale(2);
@@ -220,7 +220,7 @@ nav {
   top: 0;
   left: 0;
   z-index: -1;
-  backdrop-filter: invert(100%);  /* 階調反転させる */
+  backdrop-filter: invert(100%); /* 階調反転させる */
 }
 .section-Top-title {
   position: absolute;
@@ -402,7 +402,6 @@ body::-webkit-scrollbar-track {
   display: none;
 }
 
-
 .shoes-container {
   position: absolute;
   top: 0;
@@ -451,8 +450,8 @@ body::-webkit-scrollbar-track {
   width: 2px;
   height: 100%;
   background: black; */
-  /* animation: blinkCursor 0.8s steps(3) forwards 4; */
-  /* animation: blinkCursor 0.8s steps(3) forwards infinite;
+/* animation: blinkCursor 0.8s steps(3) forwards 4; */
+/* animation: blinkCursor 0.8s steps(3) forwards infinite;
 } */
 /* .shoes-h1Second::before {
   content: "";
@@ -462,8 +461,8 @@ body::-webkit-scrollbar-track {
   width: 2px;
   height: 100%;
   background: black; */
-  /* animation: blinkCursor 0.8s steps(3) forwards 4; */
-  /* animation: blinkCursor 0.8s steps(3) forwards infinite;
+/* animation: blinkCursor 0.8s steps(3) forwards 4; */
+/* animation: blinkCursor 0.8s steps(3) forwards infinite;
 } */
 /* @keyframes blinkCursor {
   0%,25% {
@@ -488,8 +487,16 @@ body::-webkit-scrollbar-track {
   }
 } */
 
-@-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
 
 .card-list {
   display: flex;
@@ -508,7 +515,7 @@ body::-webkit-scrollbar-track {
   width: 260px;
   padding: 1.5rem 1rem;
   background: #ffffff;
-  box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   max-width: 295px;
   margin: 20px auto;
@@ -530,7 +537,7 @@ body::-webkit-scrollbar-track {
   }
 }
 .card:nth-of-type(1) {
-  background: linear-gradient(45deg,rgb(161, 138, 114), rgb(242, 139, 107) );
+  background: linear-gradient(45deg, rgb(161, 138, 114), rgb(242, 139, 107));
 }
 .card:nth-of-type(1).inview {
   animation-name: shoesAnimation;
@@ -603,7 +610,6 @@ body::-webkit-scrollbar-track {
   left: 1rem;
   right: 1rem;
   bottom: 1.5rem;
-
 }
 .card-detail {
   position: relative;
@@ -644,7 +650,7 @@ body::-webkit-scrollbar-track {
 .sizesButton {
   background: none;
   border: none;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
@@ -682,7 +688,6 @@ body::-webkit-scrollbar-track {
   color: darksalmon;
 }
 
-
 .bannerSection {
   position: fixed;
   width: 100%;
@@ -714,10 +719,10 @@ body::-webkit-scrollbar-track {
 .banner .blocks:nth-child(even) {
   animation: animate 1s ease-in-out forwards;
 }
-.banner .blocks:nth-child(7n+3) {
+.banner .blocks:nth-child(7n + 3) {
   animation: animate 2.5s ease-in-out forwards;
 }
-.banner .blocks:nth-child(7n+7) {
+.banner .blocks:nth-child(7n + 7) {
   animation: animate 1.5s ease-in-out forwards;
 }
 
@@ -744,696 +749,3 @@ body::-webkit-scrollbar-track {
     background-repeat: no-repeat;
   }
 }
-
-/* フッター */
-footer {
-  background-color: black;
-  height: 400px;
-  position: relative;
-  top: 0;
-  cursor: pointer;
-}
-.footer-container {
-  width: 600px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.footer-logo {
-  padding: 80px 0 40px;
-}
-.footer-list ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: space-around;
-}
-.footer-icons {
-  display: flex;
-}
-.footer-icons-container {
-  width: 100%;
-  display: flex;
-}
-.footer-icons-container ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 50%;
-  /* margin: 0 auto; */
-  justify-content: space-around;
-  padding: 30px 0;
-  margin-left: auto;
-}
-.fa-facebook-squareFacebook {
-  width: 40px;
-  height: 40px;
-  background-color: royalblue;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-.fa-facebook-squareFacebook::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.fa-facebook-square:hover {
-  color: white;
-}
-.fa-facebook-squareFacebook:hover::before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-.fa-cameraCamera {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(214, 36, 170);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-.fa-cameraCamera::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.fa-camera:hover {
-  color: #fff;
-}
-.fa-cameraCamera:hover::before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-.fa-twitterTwitter {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 172, 237, 1);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-.fa-twitterTwitter::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.fa-twitter:hover {
-  color: white;
-}
-.fa-twitterTwitter:hover::before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-.fa-envelopeEnvelope {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(57, 184, 46);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-.fa-envelopeEnvelope::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.fa-envelope:hover {
-  color: #fff;
-}
-.fa-envelopeEnvelope:hover::before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-.fa-youtubeYoutube {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(233, 56, 56);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-.fa-youtubeYoutube::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.fa-youtube:hover {
-  color: white;
-}
-.fa-youtubeYoutube:hover::before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-.footer-icons-container > ul > li > span {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.footer-icons-container div {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-}
-.footer-icons-container div button {
-  height: 41px;
-  margin-left: 20px;
-  border-radius: 50px;
-  width: 96px;
-  font-size: 15px;
-  font-family: "CA Sans", YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande",
-    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック",
-    sans-serif;
-  font-weight: bold;
-  color: white;
-  background-color: white;
-  border: 2px solid white;
-  position: relative;
-  overflow: hidden;
-  /* 文字表示させる */
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-.footer-icons-container div button::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: black;
-  border-radius: 50px;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.footer-icons-container div button:hover {
-  color: black;
-}
-.footer-icons-container > div > button:hover::before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-.fab {
-  color: black;
-}
-footer small {
-  color: #fff;
-}
-.footer-list ul li a {
-  font-size: 12px;
-  color: #fff;
-}
-
-/* フッターレスポンシブのデザイン */
-.footerR {
-  background-color: black;
-  display: none;
-}
-.footer-logoR {
-  padding: 40px 0 30px;
-}
-.footer-logoR > img {
-  width: 8rem;
-}
-.footer-containerR {
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.footer-icons-containerR {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-.footer-icons-containerR ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  min-width: 225px;
-}
-.footer-icons-containerR > ul > li {
-  background-color: white;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-/* レスポンシブfacebookBtn */
-.fa-facebookRYA {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background: royalblue;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.fa-facebookRYA:before {
-  content: "";
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-.fa-facebookRY {
-  height: 15px;
-  width: 17px;
-  margin: 0 auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-}
-.fa-facebookRYA:hover:before,
-.fa-facebookRYA:focus:before,
-.fa-facebookRYA:active:before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-/* レスポンシブcameraBtn */
-.fa-cameraRYA {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background: rgb(214, 36, 170);
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.fa-cameraRYA:before {
-  content: "";
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-.fa-cameraRY {
-  height: 15px;
-  width: 17px;
-  margin: 0 auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-}
-.fa-cameraRYA:hover:before,
-.fa-cameraRYA:focus:before,
-.fa-cameraRYA:active:before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-/* レスポンシブtwitterBtn */
-.fa-twitterRYA {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background: rgba(0, 172, 237, 1);
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.fa-twitterRYA:before {
-  content: "";
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-.fa-twitterRY {
-  height: 15px;
-  width: 17px;
-  margin: 0 auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-}
-.fa-twitterRYA:hover:before,
-.fa-twitterRYA:focus:before,
-.fa-twitterRYA:active:before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-/* レスポンシブenvelopeBtn */
-.fa-envelopeRYA {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background: rgb(57, 184, 46);
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.fa-envelopeRYA:before {
-  content: "";
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-.fa-envelopeRY {
-  height: 15px;
-  width: 17px;
-  margin: 0 auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-}
-.fa-envelopeRYA:hover:before,
-.fa-envelopeRYA:focus:before,
-.fa-envelopeRYA:active:before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-/* レスポンシブyoutubeBtn */
-.fa-youtubeRYA {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background: red;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.fa-youtubeRYA:before {
-  content: "";
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-.fa-youtubeRY {
-  height: 15px;
-  width: 17px;
-  margin: 0 auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.fa-youtubeRYA:hover:before,
-.fa-youtubeRYA:focus:before,
-.fa-youtubeRYA:active:before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-.color {
-  color: white;
-}
-.color1 {
-  color: black;
-}
-/* レスポンシブyoutubeBtn */
-
-.footer-icons-containerR > ul > li > span {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.footerIconlogoBtn {
-  height: 30px;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  width: 80px;
-  color: white;
-  background-color: white;
-  border: 2px solid white;
-  position: relative;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  font-weight: bold;
-}
-.footerIconlogo {
-  color: white;
-  height: 100%;
-  transform: scale(1.3);
-  display: flex;
-  flex-direction: column;
-}
-.footerIconlogo p {
-  margin: 0;
-  font-size: 6px;
-  margin-top: auto;
-  margin-bottom: auto;
-  user-select: none;
-}
-.footerIconlogoBtn::before {
-  content: "";
-  background: black;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50px;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-.footerIconlogo:hover {
-  color: black;
-}
-.footerIconlogoBtn:hover::before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-.footer-listR {
-  height: 127px;
-  margin-left: -1px;
-  border-bottom: 1px solid #313130;
-  margin-bottom: 30px;
-}
-.footer-listR ul {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-  justify-content: space-around;
-  height: 100%;
-  flex-wrap: wrap;
-}
-.footer-listR ul li {
-  border-top: 1px solid #313130;
-  border-left: 1px solid #313130;
-  height: 41px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.footer-listR ul li a {
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
-  font-size: 0.5rem;
-  color: #fff;
-}
-.smalldiv {
-  display: flex;
-  flex-direction: column;
-}
-.smalldiv small {
-  margin: 0 auto;
-  font-size: 0.5rem;
-}
-
-/* フッターレスポンシブデザイン
-@media screen and (max-width: 768px) {
-  footer {
-    display: none;
-  }
-  .footerR {
-    display: block;
-  }
-} */
