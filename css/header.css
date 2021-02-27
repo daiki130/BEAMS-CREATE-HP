@@ -167,4 +167,15 @@
   z-index: 3;
   font-family: "Martel", serif;
 }
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, right top, left top, from(#3d4452), to(#d0d7e4));
+  background: linear-gradient(to left, #3d4452, #d0d7e4);
+  z-index: -3;
+}
 /*# sourceMappingURL=header.css.map */
