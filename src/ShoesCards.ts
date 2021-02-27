@@ -83,7 +83,6 @@ class ShoesCards {
   // シューズのサイズボタン作成
   private sizeButtonCreate() {
     sizes.forEach((size, i) => {
-      console.log(sizes[i]);
       this.sizesButton = document.createElement("button");
       this.sizesButton.classList.add("sizesButton");
       this.sizesButton.textContent = size;

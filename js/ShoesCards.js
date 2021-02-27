@@ -69,7 +69,6 @@ var ShoesCards = /** @class */ (function () {
     ShoesCards.prototype.sizeButtonCreate = function () {
         var _this = this;
         sizes.forEach(function (size, i) {
-            console.log(sizes[i]);
             _this.sizesButton = document.createElement("button");
             _this.sizesButton.classList.add("sizesButton");
             _this.sizesButton.textContent = size;
