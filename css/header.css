@@ -67,6 +67,10 @@
   grid-column: 10/11;
 }
 
+.header nav .mobile-menu {
+  display: none;
+}
+
 .header nav .mobile-menu .mobile-menu__btn {
   background-color: transparent;
   border: none;

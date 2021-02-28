@@ -57,16 +57,12 @@
         height: 100px !important;
         & .shoes-h1TopContainer {
           & .shoes-h1 {
-            &.shoes-h1Top {
-              font: bold 300% Consolas, Monaco, monospace;
-              border-right: 0.1em solid black;
-              white-space: nowrap;
-              overflow: hidden;
-              -webkit-animation: typing 7s steps(21, end),
-                blink-caret 0.5s step-end infinite alternate;
-              font-size: 1.8rem !important;
-              letter-spacing: 1.045rem !important;
-            }
+            border-right: 0.1em solid black;
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-animation: typing 7s steps(21, end),
+              blink-caret 0.5s step-end infinite alternate;
+            font-size: 1.8rem !important;
           }
         }
       }
@@ -86,11 +82,12 @@
       }
     }
   }
-}
-
-@media screen and (min-width: 600px) {
-  .mobile-menu {
+  /* フッターレスポンシブデザイン */
+  footer {
     display: none;
+  }
+  .footerR {
+    display: block;
   }
 }
 
@@ -108,31 +105,19 @@
       font-size: 4.5rem !important;
     }
   }
-}
-@media screen and (max-width: 1000px) {
-  .card-header {
-    & .card-header-Title {
-      font-size: 0.8rem !important;
-    }
-  }
-  // .shoes-box {
-  // }
   .card {
     height: 280px !important;
     width: 245px !important;
+    & .card-header {
+      & .card-header-Title {
+        font-size: 0.8rem !important;
+      }
+    }
   }
 }
+
 @media screen and (min-width: 1390px) {
   .card-list-container {
     width: 1030px !important;
-  }
-}
-/* フッターレスポンシブデザイン */
-@media screen and (max-width: 768px) {
-  footer {
-    display: none;
-  }
-  .footerR {
-    display: block;
   }
 }
