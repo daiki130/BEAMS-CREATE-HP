@@ -1,0 +1,45 @@
+/*アニメーションキーフレーム*/
+@keyframes bound-anim {
+  0% {
+    top: 0;
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: translate(0px, -1em);
+  }
+  50% {
+    transform: scale(1);
+  }
+  90% {
+    transform: translate(0px, 0em);
+    transform: scale(1.2, 0.8);
+  }
+  100% {
+    top: 0;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@mixin boundAnimation(
+  $name: bound-anim,
+  $duration: 1.2s,
+  $timing-function: ease,
+  $delay: 1s,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    fill-mode: $fill-mode;
+    delay: $delay;
+  }
+}
+
+@for $i from 0 through 6 {
+  .boundAnimation#{$i} {
+    @include boundAnimation($delay: 1s + 0.1 * $i);
+  }
+}

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*アニメーションキーフレーム*/
+@-webkit-keyframes bound-anim {
+  0% {
+    top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: translate(0px, -1em);
+            transform: translate(0px, -1em);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
+    -webkit-transform: translate(0px, 0em);
+            transform: translate(0px, 0em);
+    -webkit-transform: scale(1.2, 0.8);
+            transform: scale(1.2, 0.8);
+  }
+  100% {
+    top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes bound-anim {
+  0% {
+    top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: translate(0px, -1em);
+            transform: translate(0px, -1em);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
+    -webkit-transform: translate(0px, 0em);
+            transform: translate(0px, 0em);
+    -webkit-transform: scale(1.2, 0.8);
+            transform: scale(1.2, 0.8);
+  }
+  100% {
+    top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.boundAnimation0 {
+  -webkit-animation-name: bound-anim;
+          animation-name: bound-anim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.boundAnimation1 {
+  -webkit-animation-name: bound-anim;
+          animation-name: bound-anim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+.boundAnimation2 {
+  -webkit-animation-name: bound-anim;
+          animation-name: bound-anim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.boundAnimation3 {
+  -webkit-animation-name: bound-anim;
+          animation-name: bound-anim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.boundAnimation4 {
+  -webkit-animation-name: bound-anim;
+          animation-name: bound-anim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.boundAnimation5 {
+  -webkit-animation-name: bound-anim;
+          animation-name: bound-anim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.boundAnimation6 {
+  -webkit-animation-name: bound-anim;
+          animation-name: bound-anim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+/*# sourceMappingURL=boundAnimation.css.map */
