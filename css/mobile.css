@@ -61,14 +61,12 @@
     width: 270px !important;
     height: 100px !important;
   }
-  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1.shoes-h1Top {
-    font: bold 300% Consolas, Monaco, monospace;
+  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1 {
     border-right: 0.1em solid black;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 7s steps(21, end), blink-caret 0.5s step-end infinite alternate;
     font-size: 1.8rem !important;
-    letter-spacing: 1.045rem !important;
   }
   .shoes-container .shoes-box .card-list .card-list-container .card {
     height: 280px !important;
@@ -78,11 +76,12 @@
     font-size: 0.8rem !important;
     height: 30px !important;
   }
-}
-
-@media screen and (min-width: 600px) {
-  .mobile-menu {
+  /* フッターレスポンシブデザイン */
+  footer {
     display: none;
+  }
+  .footerR {
+    display: block;
   }
 }
 
@@ -96,31 +95,18 @@
   header .headline {
     font-size: 4.5rem !important;
   }
-}
-
-@media screen and (max-width: 1000px) {
-  .card-header .card-header-Title {
-    font-size: 0.8rem !important;
-  }
   .card {
     height: 280px !important;
     width: 245px !important;
+  }
+  .card .card-header .card-header-Title {
+    font-size: 0.8rem !important;
   }
 }
 
 @media screen and (min-width: 1390px) {
   .card-list-container {
     width: 1030px !important;
-  }
-}
-
-/* フッターレスポンシブデザイン */
-@media screen and (max-width: 768px) {
-  footer {
-    display: none;
-  }
-  .footerR {
-    display: block;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
