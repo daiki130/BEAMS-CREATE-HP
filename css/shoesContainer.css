@@ -50,7 +50,7 @@
 
 .main-container .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1 {
   margin: auto;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-family: "Martel", serif;
   font-weight: bold;
   z-index: 1;
@@ -63,6 +63,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  letter-spacing: 1.045rem;
 }
 
 .main-container .shoes-container .shoes-box .card-list {
