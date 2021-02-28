@@ -1,8 +1,5 @@
 @charset "UTF-8";
 @media screen and (max-width: 664px) {
-  .header nav #logo {
-    width: 5.5rem;
-  }
   .header nav .grid-column {
     display: none;
   }
@@ -24,12 +21,18 @@
     top: 70%;
     font-size: 3rem;
   }
-  .section-Top-title {
-    font-size: 2rem !important;
+  .main-container {
+    position: relative;
   }
-  .section-product-container .section-product-main {
+  .main-container .section-containerFramework {
+    min-height: 100vh;
+  }
+  .main-container .section-containerFramework #section-container .section-Top-title {
+    font-size: 2rem;
+  }
+  .main-container .section-containerFramework #section-container .section-product-container .section-product-main {
     position: absolute;
-    top: 50% !important;
+    top: 50%;
     right: 0;
     opacity: 1;
     display: -webkit-box;
@@ -40,41 +43,41 @@
         -ms-flex-direction: column;
             flex-direction: column;
     z-index: 2;
-    width: 80% !important;
-    margin-left: 0rem !important;
+    width: 80%;
+    margin-left: 0rem;
   }
-  .section-product-container .section-product-main .section-product-title {
-    font-size: 1.7rem !important;
+  .main-container .section-containerFramework #section-container .section-product-container .section-product-main .section-product-title {
+    font-size: 1.7rem;
   }
-  .section-product-container .section-product-main .product-Paragraph {
-    font-size: 0.7rem !important;
+  .main-container .section-containerFramework #section-container .section-product-container .section-product-main .product-Paragraph {
+    font-size: 0.7rem;
     letter-spacing: 0.2rem;
   }
-  .section-product-container .section-product-imgs {
-    margin-left: 0 !important;
+  .main-container .section-containerFramework #section-container .section-product-container .section-product-imgs {
+    margin-left: 0;
     left: 10%;
   }
-  .section-product-container .section-product-imgs .product-img:nth-child(1) {
+  .main-container .section-containerFramework #section-container .section-product-container .section-product-imgs .product-img:nth-child(1) {
     opacity: 1;
   }
-  .shoes-container .shoes-box .shoes-Hcontainer {
-    width: 270px !important;
-    height: 100px !important;
+  .main-container .shoes-container .shoes-box .shoes-Hcontainer {
+    width: 270px;
+    height: 100px;
   }
-  .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1 {
+  .main-container .shoes-container .shoes-box .shoes-Hcontainer .shoes-h1TopContainer .shoes-h1 {
     border-right: 0.1em solid black;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 7s steps(21, end), blink-caret 0.5s step-end infinite alternate;
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
-  .shoes-container .shoes-box .card-list .card-list-container .card {
-    height: 280px !important;
-    width: 245px !important;
+  .main-container .shoes-container .shoes-box .card-list .card-list-container .card {
+    height: 280px;
+    width: 245px;
   }
-  .shoes-container .shoes-box .card-list .card-list-container .card.card-header .card-header-Title {
-    font-size: 0.8rem !important;
-    height: 30px !important;
+  .main-container .shoes-container .shoes-box .card-list .card-list-container .card .card-header .card-header-Title {
+    font-size: 0.8rem;
+    height: 30px;
   }
   /* フッターレスポンシブデザイン */
   footer {
@@ -86,27 +89,20 @@
 }
 
 @media screen and (max-width: 1000px) {
-  header nav #logo {
-    width: 6rem !important;
+  .header nav #logo {
+    width: 5.5rem;
   }
-  header nav .grid-column {
-    font-size: 0.8rem !important;
+  .header nav .grid-column {
+    font-size: 0.8rem;
   }
-  header .headline {
-    font-size: 4.5rem !important;
-  }
-  .card {
-    height: 280px !important;
-    width: 245px !important;
-  }
-  .card .card-header .card-header-Title {
-    font-size: 0.8rem !important;
+  .header .headline {
+    font-size: 4.5rem;
   }
 }
 
 @media screen and (min-width: 1390px) {
-  .card-list-container {
-    width: 1030px !important;
+  .main-container .shoes-container .shoes-box .card-list .card-list-container {
+    width: 1030px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
