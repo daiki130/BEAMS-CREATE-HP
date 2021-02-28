@@ -1,9 +1,6 @@
 @media screen and (max-width: 664px) {
   .header {
     nav {
-      & #logo {
-        width: 5.5rem;
-      }
       & .grid-column {
         display: none;
       }
@@ -20,61 +17,69 @@
       font-size: 3rem;
     }
   }
-  .section-Top-title {
-    font-size: 2rem !important;
-  }
-  .section-product-container {
-    & .section-product-main {
-      position: absolute;
-      top: 50% !important;
-      right: 0;
-      opacity: 1;
-      display: flex;
-      flex-direction: column;
-      z-index: 2;
-      width: 80% !important;
-      margin-left: 0rem !important;
-      & .section-product-title {
-        font-size: 1.7rem !important;
-      }
-      & .product-Paragraph {
-        font-size: 0.7rem !important;
-        letter-spacing: 0.2rem;
-      }
-    }
-    & .section-product-imgs {
-      margin-left: 0 !important;
-      left: 10%;
-      & .product-img:nth-child(1) {
-        opacity: 1;
-      }
-    }
-  }
-  .shoes-container {
-    & .shoes-box {
-      & .shoes-Hcontainer {
-        width: 270px !important;
-        height: 100px !important;
-        & .shoes-h1TopContainer {
-          & .shoes-h1 {
-            border-right: 0.1em solid black;
-            white-space: nowrap;
-            overflow: hidden;
-            -webkit-animation: typing 7s steps(21, end),
-              blink-caret 0.5s step-end infinite alternate;
-            font-size: 1.8rem !important;
+  .main-container {
+    position: relative;
+    & .section-containerFramework {
+      min-height: 100vh;
+      & #section-container {
+        & .section-Top-title {
+          font-size: 2rem;
+        }
+        .section-product-container {
+          & .section-product-main {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+            width: 80%;
+            margin-left: 0rem;
+            & .section-product-title {
+              font-size: 1.7rem;
+            }
+            & .product-Paragraph {
+              font-size: 0.7rem;
+              letter-spacing: 0.2rem;
+            }
+          }
+          & .section-product-imgs {
+            margin-left: 0;
+            left: 10%;
+            & .product-img:nth-child(1) {
+              opacity: 1;
+            }
           }
         }
       }
-      & .card-list {
-        & .card-list-container {
-          & .card {
-            height: 280px !important;
-            width: 245px !important;
-            &.card-header {
-              & .card-header-Title {
-                font-size: 0.8rem !important;
-                height: 30px !important;
+    }
+    .shoes-container {
+      & .shoes-box {
+        & .shoes-Hcontainer {
+          width: 270px;
+          height: 100px;
+          & .shoes-h1TopContainer {
+            & .shoes-h1 {
+              border-right: 0.1em solid black;
+              white-space: nowrap;
+              overflow: hidden;
+              -webkit-animation: typing 7s steps(21, end),
+                blink-caret 0.5s step-end infinite alternate;
+              font-size: 1.8rem;
+            }
+          }
+        }
+        & .card-list {
+          & .card-list-container {
+            & .card {
+              height: 280px;
+              width: 245px;
+              & .card-header {
+                & .card-header-Title {
+                  font-size: 0.8rem;
+                  height: 30px;
+                }
               }
             }
           }
@@ -92,32 +97,31 @@
 }
 
 @media screen and (max-width: 1000px) {
-  header {
+  .header {
     & nav {
       & #logo {
-        width: 6rem !important;
+        width: 5.5rem;
       }
       & .grid-column {
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
       }
     }
     & .headline {
-      font-size: 4.5rem !important;
-    }
-  }
-  .card {
-    height: 280px !important;
-    width: 245px !important;
-    & .card-header {
-      & .card-header-Title {
-        font-size: 0.8rem !important;
-      }
+      font-size: 4.5rem;
     }
   }
 }
 
 @media screen and (min-width: 1390px) {
-  .card-list-container {
-    width: 1030px !important;
+  .main-container {
+    & .shoes-container {
+      & .shoes-box {
+        & .card-list {
+          & .card-list-container {
+            width: 1030px;
+          }
+        }
+      }
+    }
   }
 }
