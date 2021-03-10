@@ -43,7 +43,7 @@ mobileMenuBtn.addEventListener("mouseover", function () {
     cursor.style.display = "none";
 });
 mobileMenuBtn.addEventListener("mouseout", function () {
-    cursor.style.display = "none";
+    cursor.style.display = "block";
 });
 // ハンバーガーメニュークリック時のcursorイベント
 mobileMenuBtn.addEventListener("click", function () {
