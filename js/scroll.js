@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         opacity: 0,
       });
   }
-  if (windowWidth <= 1049) {
+  if (windowWidth < 1050) {
     gsap
       .timeline({
         ease: Linear.easeNone,
