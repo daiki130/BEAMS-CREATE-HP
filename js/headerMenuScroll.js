@@ -1,6 +1,6 @@
-(() => {
+export const HeaderMenuScroll = () => {
   const els = document.querySelectorAll(".grid-column");
-  els.forEach(el => {
+  els.forEach((el) => {
     gsap.to(el, {
       color: "salmon",
       scrollTrigger: {
@@ -8,9 +8,9 @@
         start: "top 70px",
         end: "bottom 70px",
         // markers: true,
-        toggleActions: "play pause resume reset"
-      }
-    })
+        toggleActions: "play pause resume reset",
+      },
+    });
     gsap.to(el, {
       color: "#FFC107",
       scrollTrigger: {
@@ -18,9 +18,8 @@
         start: "top 70px",
         end: "bottom 70px",
         // markers: true,
-        toggleActions: "play pause resume reset"
-      }
-    })
+        toggleActions: "play pause resume reset",
+      },
+    });
   });
-
-})()
+};
