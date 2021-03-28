@@ -1,4 +1,4 @@
-export const HeaderMenuScroll = () => {
+(() => {
   const els = document.querySelectorAll(".grid-column");
   els.forEach((el) => {
     gsap.to(el, {
@@ -22,4 +22,4 @@ export const HeaderMenuScroll = () => {
       },
     });
   });
-};
+})();
