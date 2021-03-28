@@ -13,12 +13,12 @@ const sizes: string[] = [
   "29.0",
 ];
 const sneakerImgs: string[] = [
-  "./img/SHOES/Yeezy Boost 350 V2 Sand Taupe.png",
-  "./img/SHOES/NIKE Blazer Mid 77 Vintage1.png",
-  "./img/SHOES/New Balance CM996 BG.png",
-  "./img/SHOES/Jordan 1 Retro High Shinedown Attention Attention PE.png",
-  "./img/SHOES/Converse Chuck Taylor All-Star 70s Hi Obsidian.png",
-  "./img/SHOES/Dr Martens 1460 8-eye boots in black.png",
+  "../img/SHOES/Yeezy Boost 350 V2 Sand Taupe.png",
+  "../img/SHOES/NIKE Blazer Mid 77 Vintage1.png",
+  "../img/SHOES/New Balance CM996 BG.png",
+  "../img/SHOES/Jordan 1 Retro High Shinedown Attention Attention PE.png",
+  "../img/SHOES/Converse Chuck Taylor All-Star 70s Hi Obsidian.png",
+  "../img/SHOES/Dr Martens 1460 8-eye boots in black.png",
 ];
 const title = [
   "Yeezy Boost 350 V2 Sand Taupe",
