@@ -25,7 +25,7 @@ a {
   transition-property: background, transform; /* トランジション効果を適用する CSS プロパティを指定 */
   transform-origin: 100% 100%; /* transformの原点を設定 */
   z-index: 4;
-  backdrop-filter: grayscale(); /* モノトーン */
+  /* backdrop-filter: grayscale(); モノトーン */
   pointer-events: none;
 }
 .link-grow {
