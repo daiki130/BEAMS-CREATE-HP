@@ -49,6 +49,24 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpg|jpeg)/,
+        type: "asset/resource",
+        generator: {
+          filename: "./img/[name][ext]",
+        },
+        use: [
+          {
+            loader: "image-webpack-loader",
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
