@@ -29,6 +29,7 @@ import "../img/SHOES/Yeezy Boost 350 V2 Sand Taupe.png";
 import "../img/BEAMS.png";
 import "../img/BEAMS_logo.png";
 import "../img/brian-lundquist-APbQJD8wJLc-unsplash.jpg";
+import "../mount3.mp4";
 
 Header();
 CURSOR();
