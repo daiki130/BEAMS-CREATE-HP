@@ -71,7 +71,6 @@ export const Header = () => {
           height: "100vh",
           top: "0%",
           bottom: "0%",
-          position: "fixed",
           ease: Power2.easeInOut,
         },
         "+=0.5"

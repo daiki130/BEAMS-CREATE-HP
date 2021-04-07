@@ -14,7 +14,6 @@ export const SCROLL = () => {
             pin: true,
           },
         })
-        .from(".shoes-container", { opacity: 0 })
         .from(".shoes-Hcontainer", {
           x: innerWidth * 1,
           opacity: 0,
@@ -57,7 +56,6 @@ export const SCROLL = () => {
             // pin: true,
           },
         })
-        .from(".shoes-container", { opacity: 0 })
         .from(".shoes-Hcontainer", {
           x: innerWidth * 1,
           opacity: 0,
